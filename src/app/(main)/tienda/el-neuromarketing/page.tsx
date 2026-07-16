@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
 import Image from 'next/image';
 
+import { getProduct, isProductReady } from "@/lib/products";
+
 export const metadata: Metadata = {
   title: "El Neuromarketing | Carlos Alberto Jimenez",
   description: "Libro PDF El Neuromarketing de Carlos Alberto Jimenez.",
 };
 
 export default function ElNeuromarketing() {
+  const product = getProduct("el-neuromarketing");
+  const ready = product ? isProductReady(product) : false;
+
   return (
     <section className="product-page">
       <div className="container product-page__grid">
@@ -22,7 +27,13 @@ export default function ElNeuromarketing() {
           </ul>
           <div className="product-buy product-buy--wide">
             <span className="product-price">$20.000 COP</span>
-            <a className="button button--primary" href="#" data-wompi-product="el-neuromarketing">Comprar con Wompi</a>
+            {ready ? (
+              <form action="/api/wompi/checkout/el-neuromarketing" method="get">
+                <button className="button button--primary" type="submit">Comprar con Wompi</button>
+              </form>
+            ) : (
+              <span className="button button--disabled">Proximamente</span>
+            )}
           </div>
         </div>
       </div>
