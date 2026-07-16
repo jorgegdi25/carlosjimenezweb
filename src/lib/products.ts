@@ -48,6 +48,14 @@ const products: DigitalProduct[] = [
     currency: "COP",
     delivery: "course",
   },
+  {
+    slug: "neurocalma-444",
+    referenceCode: "NEUROCALMA-444",
+    name: "Neurocalma 444",
+    amountInCents: 3_000_000,
+    currency: "COP",
+    delivery: "course",
+  },
 ];
 
 export function getProduct(slug: string) {

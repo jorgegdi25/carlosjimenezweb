@@ -15,11 +15,11 @@ export default function Tienda() {
           <div>
             <p className="eyebrow">Tienda estatica</p>
             <h1>Cursos y libros</h1>
-            <p>Productos digitales de Carlos Alberto Jimenez. Los botones quedan listos para conectar con enlaces de pago Wompi cuando esten disponibles.</p>
+            <p>Productos digitales de Carlos Alberto Jimenez con pagos seguros y entrega automatica de los contenidos.</p>
           </div>
           <div className="shop-note">
             <strong>Pagos Wompi</strong>
-            <span>Los enlaces de compra se activan reemplazando el `href=&quot;#&quot;` de cada boton por el checkout correspondiente.</span>
+            <span>Los productos habilitados usan Wompi para verificar el pago antes de entregar cada descarga o acceso.</span>
           </div>
         </div>
       </section>
@@ -27,10 +27,23 @@ export default function Tienda() {
       <section className="section section--light" id="curso">
         <div className="container">
           <div className="section-heading">
-            <p className="eyebrow">Curso online</p>
-            <h2>Respirar para vivir mejor</h2>
-            <p>De la ansiedad a la tranquilidad. Curso practico para reducir estres, recuperar calma y fortalecer bienestar cotidiano.</p>
+            <p className="eyebrow">Cursos online</p>
+            <h2>Aprendizaje para el bienestar</h2>
+            <p>Programas practicos para reducir el estres, recuperar la calma y fortalecer el bienestar cotidiano.</p>
           </div>
+
+          <article className="shop-feature">
+            <Image src="/assets/img/neurocalma-card.png" alt="Curso Neurocalma 444" width={800} height={500} />
+            <div>
+              <p className="product-tag">Curso digital</p>
+              <h3>Neurocalma 444</h3>
+              <p>Guia practica para disminuir el estres y la ansiedad, encontrar equilibrio y mejorar el enfoque.</p>
+              <div className="product-buy">
+                <span className="product-price">$30.000 COP</span>
+                <Link className="button button--primary" href="/cursos/neurocalma-444">Ver curso</Link>
+              </div>
+            </div>
+          </article>
 
           <article className="shop-feature">
             <Image src="/assets/img/respirar-para-vivir.jpg" alt="Curso Respirar para vivir mejor" width={800} height={500} />

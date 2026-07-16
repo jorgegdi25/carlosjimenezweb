@@ -97,20 +97,18 @@ export default function Neurocalma444() {
             </div>
 
             <div className={`${styles['cta-group']} ${styles['reveal-hero']}`} aria-label="Comprar o consultar por WhatsApp">
-              <a
-                className={`${styles.button} ${styles['button--buy']} ${styles['hotmart-link']}`}
-                href="https://www.hotmart.com/"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                className={`${styles.button} ${styles['button--buy']}`}
+                href="/api/wompi/checkout/neurocalma-444"
               >
                 <span className={styles.button__icon} aria-hidden="true">
-                  <Image src="/images/landing-neurocalma/YVbMwUeWeC.svg" alt="Hotmart Logo" width={24} height={24} />
+                  <Image src="/images/landing-neurocalma/kLnsBmT16B.svg" alt="" width={24} height={24} />
                 </span>
                 <span>
-                  <strong>Comprar ahora - $7 USD</strong>
-                  <small>Pago 100% seguro a través de Hotmart</small>
+                  <strong>Comprar ahora - $30.000 COP</strong>
+                  <small>Pago seguro con Wompi y acceso inmediato</small>
                 </span>
-              </a>
+              </Link>
 
               <a
                 className={`${styles.button} ${styles['button--whatsapp']} ${styles['whatsapp-link']}`}
@@ -179,20 +177,18 @@ export default function Neurocalma444() {
           </div>
 
           <div className={`${styles['section-shell']} ${styles['final-cta']}`}>
-            <a
-              className={`${styles.button} ${styles['button--buy']} ${styles['hotmart-link']}`}
-              href="https://www.hotmart.com/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              className={`${styles.button} ${styles['button--buy']}`}
+              href="/api/wompi/checkout/neurocalma-444"
             >
               <span className={styles.button__icon} aria-hidden="true">
-                <Image src="/images/landing-neurocalma/YVbMwUeWeC.svg" alt="Hotmart Logo" width={24} height={24} />
+                <Image src="/images/landing-neurocalma/kLnsBmT16B.svg" alt="" width={24} height={24} />
               </span>
               <span>
-                <strong>Comprar ahora - $7 USD</strong>
+                <strong>Comprar ahora - $30.000 COP</strong>
                 <small>Acceso inmediato al curso online</small>
               </span>
-            </a>
+            </Link>
             <a
               className={`${styles.button} ${styles['button--whatsapp']} ${styles['whatsapp-link']}`}
               href="https://wa.me/573104534160?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20curso%20Neurocalma%20444."
@@ -214,7 +210,7 @@ export default function Neurocalma444() {
           <div className={`${styles['section-shell']} ${styles.trust__grid}`}>
             <div>
               <Image src="/images/landing-neurocalma/kLnsBmT16B.svg" alt="Seguridad" width={24} height={24} />
-              <p>Pago 100% seguro a través de Hotmart</p>
+              <p>Pago 100% seguro a través de Wompi</p>
             </div>
             <div>
               <Image src="/images/landing-neurocalma/DBjo4kDpcl.svg" alt="Reloj" width={24} height={24} />
@@ -235,17 +231,15 @@ export default function Neurocalma444() {
       </footer>
 
       <div className={`${styles['sticky-cta']} ${isStickyVisible ? styles['is-visible'] : ''}`}>
-        <a
-          href="https://www.hotmart.com/"
+        <Link
+          href="/api/wompi/checkout/neurocalma-444"
           className={`${styles.button} ${styles['button--buy']}`}
-          target="_blank"
-          rel="noopener noreferrer"
         >
           <span className={styles.button__icon}>
-            <Image src="/images/landing-neurocalma/YVbMwUeWeC.svg" alt="" width={24} height={24} />
+            <Image src="/images/landing-neurocalma/kLnsBmT16B.svg" alt="" width={24} height={24} />
           </span>
-          <strong>Comprar ahora - $7 USD</strong>
-        </a>
+          <strong>Comprar ahora - $30.000 COP</strong>
+        </Link>
       </div>
     </div>
   );

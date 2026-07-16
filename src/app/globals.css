@@ -917,6 +917,10 @@ h3 {
   box-shadow: var(--shadow);
 }
 
+.shop-feature + .shop-feature {
+  margin-top: 28px;
+}
+
 .shop-feature > img {
   width: 100%;
   aspect-ratio: 16 / 9;
