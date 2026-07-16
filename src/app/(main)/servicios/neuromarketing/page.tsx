@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -16,7 +17,7 @@ export default function Neuromarketing() {
             <h1>Neuromarketing</h1>
             <p>Consultorias y asesorias para comprender emociones, decisiones, marcas y comportamiento del consumidor desde el conocimiento del cerebro.</p>
           </div>
-          <img src="/assets/img/neuromarketing.jpg" alt="Neuromarketing" />
+          <Image src="/assets/img/neuromarketing.jpg" alt="Neuromarketing" width={600} height={400} />
         </div>
       </section>
       <section className="section">

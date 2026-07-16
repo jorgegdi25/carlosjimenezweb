@@ -1,11 +1,12 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
     <footer className="footer" id="contactos">
       <div className="container footer__grid">
         <div>
-          <img src="/assets/img/logo-amarillo.png" alt="Carlos Alberto Jimenez" className="footer__logo" />
+          <Image src="/assets/img/logo-amarillo.png" alt="Carlos Alberto Jimenez" className="footer__logo" width={200} height={100} />
           <p>Asesorías educativas y empresariales para aprender, crear y transformar desde el juego, la lúdica y el conocimiento del cerebro.</p>
         </div>
         <nav aria-label="Secciones">

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: "Respirar para vivir mejor | Carlos Alberto Jimenez",
@@ -9,7 +10,7 @@ export default function RespirarParaVivirMejor() {
   return (
     <section className="product-page">
       <div className="container product-page__grid">
-        <img src="/assets/img/respirar-para-vivir.jpg" alt="Respirar para vivir mejor" />
+        <Image src="/assets/img/respirar-para-vivir.jpg" alt="Respirar para vivir mejor" width={400} height={600} />
         <div>
           <p className="product-tag">Curso digital</p>
           <h1>Respirar para vivir mejor</h1>

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -32,7 +33,7 @@ export default function Tienda() {
           </div>
 
           <article className="shop-feature">
-            <img src="/assets/img/respirar-para-vivir.jpg" alt="Curso Respirar para vivir mejor" />
+            <Image src="/assets/img/respirar-para-vivir.jpg" alt="Curso Respirar para vivir mejor" width={800} height={500} />
             <div>
               <p className="product-tag">Curso digital</p>
               <h3>Respirar para vivir mejor</h3>
@@ -56,7 +57,7 @@ export default function Tienda() {
 
           <div className="product-grid">
             <article className="product-card">
-              <img src="/assets/img/libro-dialogo-real.png" alt="Dialogo Con Mi Cerebro" />
+              <Image src="/assets/img/libro-dialogo-real.png" alt="Dialogo Con Mi Cerebro" width={400} height={600} />
               <div>
                 <p className="product-tag">Libro PDF</p>
                 <h3>Dialogo Con Mi Cerebro</h3>
@@ -69,7 +70,7 @@ export default function Tienda() {
             </article>
 
             <article className="product-card">
-              <img src="/assets/img/libro-neuromarketing-real.png" alt="El Neuromarketing" />
+              <Image src="/assets/img/libro-neuromarketing-real.png" alt="El Neuromarketing" width={400} height={600} />
               <div>
                 <p className="product-tag">Libro PDF</p>
                 <h3>El Neuromarketing</h3>
@@ -82,7 +83,7 @@ export default function Tienda() {
             </article>
 
             <article className="product-card">
-              <img src="/assets/img/libro-cerebros-real.png" alt="Cerebros digitales" />
+              <Image src="/assets/img/libro-cerebros-real.png" alt="Cerebros digitales" width={400} height={600} />
               <div>
                 <p className="product-tag">Libro PDF</p>
                 <h3>Cerebros digitales</h3>

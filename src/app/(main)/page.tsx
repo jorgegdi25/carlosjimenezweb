@@ -103,7 +103,7 @@ export default function Home() {
 
           <div className="service-grid">
             <article className="course-card">
-              <img className="course-card__image" src="/assets/img/respirar-para-vivir.jpg" alt="Respirar para vivir mejor" />
+              <Image className="course-card__image" src="/assets/img/respirar-para-vivir.jpg" alt="Respirar para vivir mejor" width={600} height={400} />
               <div className="course-card__content">
                 <h3>Respirar para vivir mejor</h3>
                 <p>De la ansiedad a la tranquilidad. Recupera tu calma y presencia.</p>
@@ -112,7 +112,7 @@ export default function Home() {
             </article>
 
             <article className="course-card">
-              <img className="course-card__image" src="/assets/img/neurocalma-card.png" alt="Neurocalma 444" />
+              <Image className="course-card__image" src="/assets/img/neurocalma-card.png" alt="Neurocalma 444" width={600} height={400} />
               <div className="course-card__content">
                 <h3>Neurocalma 444</h3>
                 <p>Guía práctica para disminuir el estrés y la ansiedad cotidiana.</p>
@@ -121,7 +121,7 @@ export default function Home() {
             </article>
 
             <article className="course-card">
-              <img className="course-card__image" src="/assets/img/neuronas-fondo.png" alt="Próximamente" />
+              <Image className="course-card__image" src="/assets/img/neuronas-fondo.png" alt="Próximamente" width={600} height={400} />
               <div className="course-card__content">
                 <h3 style={{ color: 'var(--muted)' }}>Próximamente</h3>
                 <p>Un nuevo programa enfocado en el desarrollo integral está en camino.</p>
@@ -142,21 +142,21 @@ export default function Home() {
 
           <div className="service-grid">
             <article className="service-card">
-              <img src="/assets/img/neuromarketing.jpg" alt="Neuromarketing" />
+              <Image src="/assets/img/neuromarketing.jpg" alt="Neuromarketing" width={800} height={500} />
               <div>
                 <h3>Neuromarketing</h3>
                 <Link className="text-link" href="/servicios/neuromarketing">Haz clic aqui</Link>
               </div>
             </article>
             <article className="service-card">
-              <img src="/assets/img/ludica.jpg" alt="Ludica y juego" />
+              <Image src="/assets/img/ludica.jpg" alt="Ludica y juego" width={800} height={500} />
               <div>
                 <h3>Ludica y juego</h3>
                 <Link className="text-link" href="/servicios/ludica-y-juego">Haz clic aqui</Link>
               </div>
             </article>
             <article className="service-card">
-              <img src="/assets/img/neuropedagogia.jpg" alt="Neuropedagogia ludica" />
+              <Image src="/assets/img/neuropedagogia.jpg" alt="Neuropedagogia ludica" width={800} height={500} />
               <div>
                 <h3>Neuropedagogia ludica</h3>
                 <Link className="text-link" href="/servicios/neuropedagogia">Haz clic aqui</Link>
@@ -175,15 +175,15 @@ export default function Home() {
 
           <div className="book-grid">
             <article className="book-card">
-              <img src="/assets/img/libro-neuromarketing-real.png" alt="Libro El neuromarketing" />
+              <Image src="/assets/img/libro-neuromarketing-real.png" alt="Libro El neuromarketing" width={400} height={600} />
               <Link className="button button--small" href="/tienda#libros">Ver mas informacion</Link>
             </article>
             <article className="book-card">
-              <img src="/assets/img/libro-cerebros-real.png" alt="Libro Cerebros digitales" />
+              <Image src="/assets/img/libro-cerebros-real.png" alt="Libro Cerebros digitales" width={400} height={600} />
               <Link className="button button--small" href="/tienda#libros">Ver mas informacion</Link>
             </article>
             <article className="book-card">
-              <img src="/assets/img/libro-dialogo-real.png" alt="Libro Dialogo con mi cerebro" />
+              <Image src="/assets/img/libro-dialogo-real.png" alt="Libro Dialogo con mi cerebro" width={400} height={600} />
               <Link className="button button--small" href="/tienda#libros">Ver mas informacion</Link>
             </article>
           </div>
@@ -193,11 +193,11 @@ export default function Home() {
             <Link className="text-link" href="/tienda#libros">Ver mas</Link>
           </div>
           <div className="shelf">
-            <img src="/assets/img/libros-1.png" alt="Libro fisico 1" />
-            <img src="/assets/img/libros-2.png" alt="Libro fisico 2" />
-            <img src="/assets/img/libros-3.png" alt="Libro fisico 3" />
-            <img src="/assets/img/libros-4.png" alt="Libro fisico 4" />
-            <img src="/assets/img/libros-5.png" alt="Libro fisico 5" />
+            <Image src="/assets/img/libros-1.png" alt="Libro fisico 1" width={300} height={400} />
+            <Image src="/assets/img/libros-2.png" alt="Libro fisico 2" width={300} height={400} />
+            <Image src="/assets/img/libros-3.png" alt="Libro fisico 3" width={300} height={400} />
+            <Image src="/assets/img/libros-4.png" alt="Libro fisico 4" width={300} height={400} />
+            <Image src="/assets/img/libros-5.png" alt="Libro fisico 5" width={300} height={400} />
           </div>
         </div>
       </section>
@@ -220,7 +220,7 @@ export default function Home() {
             <h2>Bienvenido a mi canal</h2>
             <p>Videos sobre ludica, neuropedagogia, neuromarketing y reflexiones para educacion, empresa y bienestar.</p>
             <div className="youtube-panel__brand">
-              <img src="/assets/img/youtube-logo.png" alt="YouTube" />
+              <Image src="/assets/img/youtube-logo.png" alt="YouTube" width={100} height={70} />
             </div>
             <a className="button button--primary" href="https://www.youtube.com/channel/UCb3wQOP_oDblvA9XplkiGKw" target="_blank" rel="noopener noreferrer" aria-label="Ir al canal de YouTube">
               Ver canal completo
@@ -237,7 +237,7 @@ export default function Home() {
           </div>
           <div className="blog-grid">
             <article className="post-card">
-              <img src="/assets/img/blog-orgasmo.jpg" alt="Articulo El orgasmo" />
+              <Image src="/assets/img/blog-orgasmo.jpg" alt="Articulo El orgasmo" width={600} height={400} />
               <div>
                 <h3>El orgasmo</h3>
                 <p>La sexualidad humana forma parte de nuestra existencia humana, como seres racionales, emotivos e instintivos que somos.</p>
@@ -245,7 +245,7 @@ export default function Home() {
               </div>
             </article>
             <article className="post-card">
-              <img src="/assets/img/blog-juego.jpg" alt="Articulo El juego y la ludica desde el vientre materno" />
+              <Image src="/assets/img/blog-juego.jpg" alt="Articulo El juego y la ludica desde el vientre materno" width={600} height={400} />
               <div>
                 <h3>El juego y la ludica desde el vientre materno</h3>
                 <p>Para la construccion del concepto de inteligencia ludica, se requiere comprender el juego desde sus primeras manifestaciones.</p>
@@ -253,7 +253,7 @@ export default function Home() {
               </div>
             </article>
             <article className="post-card">
-              <img src="/assets/img/blog-neuromarketing.jpg" alt="Articulo El neuromarketing y los nativos digitales" />
+              <Image src="/assets/img/blog-neuromarketing.jpg" alt="Articulo El neuromarketing y los nativos digitales" width={600} height={400} />
               <div>
                 <h3>El neuromarketing y los nativos digitales</h3>
                 <p>Los cerebros de los nativos digitales tienen capacidad de procesar multitareas y nuevas formas de atencion.</p>

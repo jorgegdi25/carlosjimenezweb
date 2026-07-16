@@ -1,4 +1,5 @@
 import { getAllPostSlugs, getPostData } from '@/lib/blog';
+import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 
@@ -36,7 +37,7 @@ export default async function Post(props: Props) {
             <p>{postData.description}</p>
             <time dateTime={postData.date}>{postData.date}</time>
           </div>
-          {postData.image && <img src={postData.image} alt={postData.title} />}
+          {postData.image && <Image src={postData.image} alt={postData.title} width={800} height={600} />}
         </div>
       </header>
       <div className="container article-layout">

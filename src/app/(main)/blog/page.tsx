@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { getSortedPostsData } from '@/lib/blog';
 import type { Metadata } from "next";
 
@@ -25,7 +26,7 @@ export default function BlogList() {
             {posts.map((post) => (
               <article className="post-card" key={post.slug}>
                 {post.image && (
-                  <img src={post.image} alt={post.title} />
+                  <Image src={post.image} alt={post.title} width={600} height={400} />
                 )}
                 <div>
                   <p className="post-date">{post.date}</p>

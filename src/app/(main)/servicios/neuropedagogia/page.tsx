@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -16,7 +17,7 @@ export default function Neuropedagogia() {
             <h1>Neuropedagogia Ludica</h1>
             <p>Formacion y asesorias para integrar neuroeducacion, ludica, juego, emociones y aprendizaje significativo.</p>
           </div>
-          <img src="/assets/img/neuropedagogia.jpg" alt="Neuropedagogia ludica" />
+          <Image src="/assets/img/neuropedagogia.jpg" alt="Neuropedagogia ludica" width={600} height={400} />
         </div>
       </section>
       <section className="section">

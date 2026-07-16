@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -16,7 +17,7 @@ export default function LudicaYJuego() {
             <h1>Ludica y juego</h1>
             <p>Procesos de asesoria sobre ludica, juego, neuroludica y creatividad para instituciones educativas y empresas.</p>
           </div>
-          <img src="/assets/img/ludica.jpg" alt="Ludica y juego" />
+          <Image src="/assets/img/ludica.jpg" alt="Ludica y juego" width={600} height={400} />
         </div>
       </section>
       <section className="section">

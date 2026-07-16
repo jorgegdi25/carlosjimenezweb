@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -16,7 +17,7 @@ export default function Biografia() {
             <h1>Carlos Alberto Jimenez</h1>
             <p>Investigador, escritor y consultor en ludica, neuroeducacion, neuromarketing y procesos de aprendizaje.</p>
           </div>
-          <img src="/assets/img/carlos-2.png" alt="Carlos Alberto Jimenez" />
+          <Image src="/assets/img/carlos-2.png" alt="Carlos Alberto Jimenez" width={600} height={400} />
         </div>
       </section>
 

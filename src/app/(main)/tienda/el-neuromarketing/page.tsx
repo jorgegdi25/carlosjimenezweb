@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: "El Neuromarketing | Carlos Alberto Jimenez",
@@ -9,7 +10,7 @@ export default function ElNeuromarketing() {
   return (
     <section className="product-page">
       <div className="container product-page__grid">
-        <img src="/assets/img/libro-neuromarketing-real.png" alt="El Neuromarketing" />
+        <Image src="/assets/img/libro-neuromarketing-real.png" alt="El Neuromarketing" width={400} height={600} />
         <div>
           <p className="product-tag">Libro PDF</p>
           <h1>El Neuromarketing</h1>
