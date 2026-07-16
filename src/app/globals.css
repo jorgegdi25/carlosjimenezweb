@@ -976,6 +976,22 @@ h3 {
   width: 100%;
 }
 
+.product-page .purchase-instructions {
+  margin: 0;
+  padding: 14px 16px;
+  border-left: 4px solid #e5b520;
+  border-radius: 4px;
+  color: var(--ink);
+  background: #fff8dc;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.purchase-instructions em {
+  font-style: normal;
+  font-weight: 900;
+}
+
 .product-price {
   font-size: 22px;
   font-weight: 900;

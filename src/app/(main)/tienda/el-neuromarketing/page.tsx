@@ -28,9 +28,14 @@ export default function ElNeuromarketing() {
           <div className="product-buy product-buy--wide">
             <span className="product-price">$20.000 COP</span>
             {ready ? (
-              <form action="/api/wompi/checkout/el-neuromarketing" method="get">
-                <button className="button button--primary" type="submit">Comprar con Wompi</button>
-              </form>
+              <>
+                <form action="/api/wompi/checkout/el-neuromarketing" method="get">
+                  <button className="button button--primary" type="submit">Comprar con Wompi</button>
+                </form>
+                <p className="purchase-instructions">
+                  <strong>Después de pagar:</strong> pulsa <em>Volver al comercio</em> en Wompi para descargar tu libro.
+                </p>
+              </>
             ) : (
               <span className="button button--disabled">Proximamente</span>
             )}
