@@ -8,6 +8,8 @@ type PaymentResponse = {
   downloadUrl?: string;
   downloadFilename?: string;
   expiresInMinutes?: number;
+  delivery?: "course";
+  accessEmail?: string;
   error?: string;
 };
 
@@ -81,6 +83,23 @@ export default function PaymentResult({ transactionId }: { transactionId: string
     );
   }
 
+  if (result.status === "APPROVED" && result.delivery === "course") {
+    return (
+      <div className="payment-status payment-status--approved">
+        <p className="payment-status__label">Pago aprobado</p>
+        <h1>Tu acceso fue habilitado</h1>
+        <p>
+          Compartimos el curso con <strong>{result.accessEmail}</strong>. Revisa
+          ese correo y abre el mensaje <em>Tu acceso al curso ya esta habilitado</em>.
+        </p>
+        <p>Debes entrar a Google Drive usando esa misma cuenta.</p>
+        <a className="button button--primary" href="https://mail.google.com/">
+          Revisar mi correo
+        </a>
+      </div>
+    );
+  }
+
   if (result.status === "PENDING") {
     return (
       <div className="payment-status payment-status--pending" aria-live="polite">
@@ -96,7 +115,7 @@ export default function PaymentResult({ transactionId }: { transactionId: string
     <div className="payment-status payment-status--declined">
       <p className="payment-status__label">Pago no aprobado</p>
       <h1>La transaccion no se completo</h1>
-      <p>Wompi reporto el estado {result.status}. No se habilito ninguna descarga.</p>
+      <p>Wompi reporto el estado {result.status}. No se habilito ninguna entrega.</p>
       <a className="button button--primary" href="/tienda">Volver a la tienda</a>
     </div>
   );

@@ -2,7 +2,7 @@ import { randomUUID } from "node:crypto";
 
 import { NextResponse, type NextRequest } from "next/server";
 
-import { getProduct, getProductBlobPath } from "@/lib/products";
+import { getProduct, isProductReady } from "@/lib/products";
 import { createPurchaseSession, wompiCheckoutUrl } from "@/lib/wompi";
 
 export async function GET(
@@ -16,7 +16,7 @@ export async function GET(
     return NextResponse.json({ error: "Producto no encontrado." }, { status: 404 });
   }
 
-  if (!getProductBlobPath(product)) {
+  if (!isProductReady(product)) {
     return NextResponse.json(
       { error: "Este producto todavia no esta habilitado para venta." },
       { status: 503 },

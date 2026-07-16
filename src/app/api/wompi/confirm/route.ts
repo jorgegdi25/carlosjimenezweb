@@ -1,6 +1,7 @@
 import { issueSignedToken, presignUrl } from "@vercel/blob";
 import { NextResponse, type NextRequest } from "next/server";
 
+import { deliverCourseAccess } from "@/lib/course-delivery";
 import {
   getProductBlobPath,
   getProductFromReference,
@@ -45,6 +46,24 @@ export async function GET(request: NextRequest) {
       status: transaction.status,
       productName: product.name,
     });
+  }
+
+  if (product.delivery === "course") {
+    try {
+      const delivery = await deliverCourseAccess(transaction);
+      return NextResponse.json({
+        status: transaction.status,
+        productName: product.name,
+        delivery: "course",
+        accessEmail: delivery.email,
+      });
+    } catch (error) {
+      console.error("No fue posible conceder el acceso al curso", error);
+      return NextResponse.json(
+        { error: "El pago fue aprobado, pero no pudimos habilitar el curso." },
+        { status: 503 },
+      );
+    }
   }
 
   const pathname = getProductBlobPath(product);
