@@ -180,66 +180,15 @@ export default function CerebrosDigitalesLanding() {
           aria-label="La biblioteca se adapta a computador, tableta y celular"
         >
           <div className={styles.shell}>
-            <div className={styles.experienceScene} aria-label="La biblioteca se adapta a computador, tableta y celular">
-              <div className={styles.bookMockup}>
-                <Image
-                  src="/assets/img/libro-cerebros-real.png"
-                  alt="Portada del libro Cerebros digitales"
-                  width={300}
-                  height={400}
-                  priority
-                />
-              </div>
-
-              <div className={styles.laptop}>
-                <div className={styles.laptopScreen}>
-                  <aside>
-                    <strong>Biblioteca</strong>
-                    <span>Inicio</span>
-                    <span>Mi biblioteca</span>
-                    <span>Diagnósticos</span>
-                  </aside>
-                  <div className={styles.lessonPanel}>
-                    <p>Capítulo 1</p>
-                    <strong>¿Cómo aprende el cerebro?</strong>
-                    <div className={styles.lessonMedia}>
-                      <Image
-                        src="/assets/img/blog-los-cerebros-digitales.jpg"
-                        alt=""
-                        fill
-                        sizes="420px"
-                      />
-                    </div>
-                    <span>▶ Video principal</span>
-                    <span>▤ Leer capítulo</span>
-                    <div className={styles.progressTrack}><i></i></div>
-                  </div>
-                </div>
-                <div className={styles.laptopBase}></div>
-              </div>
-
-              <div className={styles.tablet}>
-                <p>Capítulo 1</p>
-                <h2>¿Cómo aprende el cerebro?</h2>
-                <span className={styles.brainSketch} aria-hidden="true">⌁</span>
-                <ul>
-                  <li>▶ Ver video</li>
-                  <li>◉ Escuchar podcast</li>
-                  <li>▤ Leer capítulo</li>
-                  <li>✦ Ideas clave</li>
-                </ul>
-              </div>
-
-              <div className={styles.phone}>
-                <small>Podcast</small>
-                <strong>Conversación con el autor</strong>
-                <div className={styles.waveform} aria-hidden="true">
-                  {Array.from({ length: 15 }).map((_, index) => (
-                    <i key={index}></i>
-                  ))}
-                </div>
-                <span className={styles.phonePlay} aria-hidden="true">▶</span>
-              </div>
+            <div className={styles.experienceScene}>
+              <Image
+                className={styles.experienceImage}
+                src="/assets/img/biblioteca-cerebros-dispositivos.webp"
+                alt="Biblioteca interactiva Cerebros Digitales disponible en computador, tableta y celular"
+                width={1536}
+                height={1024}
+                sizes="(max-width: 620px) calc(100vw - 28px), (max-width: 1240px) calc(100vw - 40px), 1180px"
+              />
             </div>
           </div>
         </section>

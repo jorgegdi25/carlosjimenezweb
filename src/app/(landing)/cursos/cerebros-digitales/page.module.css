@@ -377,13 +377,22 @@
 
 .experience {
   position: relative;
+  padding: 12px 0 24px;
   background: linear-gradient(180deg, #edf3fb 0%, #f8faff 100%);
 }
 
 .experienceScene {
   position: relative;
   z-index: 2;
-  min-height: 350px;
+  aspect-ratio: 2 / 1;
+  overflow: hidden;
+}
+
+.experienceImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: translateY(-14%);
 }
 
 .bookMockup {
@@ -1093,9 +1102,7 @@
   }
 
   .experienceScene {
-    transform: scale(0.88);
-    transform-origin: bottom center;
-    margin-inline: -50px;
+    margin-inline: 0;
   }
 
   .inclusionGrid article {
@@ -1166,34 +1173,13 @@
   }
 
   .experienceScene {
-    min-height: 540px;
+    min-height: 0;
+    aspect-ratio: 3 / 2;
     transform: none;
   }
 
-  .bookMockup {
-    bottom: 16px;
-    left: 2%;
-    width: 150px;
-  }
-
-  .laptop {
-    bottom: 0;
-    left: 12%;
-    width: min(520px, 72vw);
-  }
-
-  .tablet {
-    right: 8%;
-    bottom: 8px;
-    transform: scale(0.88);
-    transform-origin: bottom right;
-  }
-
-  .phone {
-    right: 0;
-    bottom: 12px;
-    transform: scale(0.82);
-    transform-origin: bottom right;
+  .experienceImage {
+    transform: none;
   }
 
   .inclusionGrid {
@@ -1295,56 +1281,9 @@
   }
 
   .experienceScene {
-    min-height: 460px;
+    min-height: 0;
+    aspect-ratio: 3 / 2;
     margin-inline: 0;
-  }
-
-  .bookMockup {
-    bottom: 20px;
-    left: 0;
-    width: 110px;
-  }
-
-  .laptop {
-    left: 8%;
-    width: 350px;
-    max-width: 82vw;
-  }
-
-  .laptopScreen {
-    height: 210px;
-    grid-template-columns: 82px 1fr;
-    padding: 6px;
-    border-width: 6px;
-  }
-
-  .laptopScreen aside {
-    gap: 10px;
-    padding: 8px 5px;
-    font-size: 0.42rem;
-  }
-
-  .lessonPanel {
-    padding: 8px 10px;
-  }
-
-  .lessonMedia {
-    height: 78px;
-  }
-
-  .tablet {
-    right: 0;
-    bottom: 8px;
-    width: 170px;
-    min-height: 250px;
-    padding: 18px 12px;
-    transform: scale(0.78);
-  }
-
-  .phone {
-    right: -8px;
-    bottom: 6px;
-    transform: scale(0.64);
   }
 
   .includes,
