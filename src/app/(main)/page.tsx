@@ -121,11 +121,11 @@ export default function Home() {
             </article>
 
             <article className="course-card">
-              <Image className="course-card__image" src="/assets/img/neuronas-fondo.png" alt="Próximamente" width={600} height={400} />
+              <Image className="course-card__image" src="/assets/img/blog-los-cerebros-digitales.jpg" alt="Biblioteca interactiva Cerebros digitales" width={600} height={400} />
               <div className="course-card__content">
-                <h3 style={{ color: 'var(--muted)' }}>Próximamente</h3>
-                <p>Un nuevo programa enfocado en el desarrollo integral está en camino.</p>
-                <span className="button button--course" style={{ cursor: 'not-allowed', opacity: 0.5, backgroundColor: 'var(--muted)' }}>Muy pronto</span>
+                <h3>Biblioteca interactiva Cerebros digitales</h3>
+                <p>Libro, videos, conversaciones y recursos para comprender el aprendizaje en la era de la inteligencia artificial.</p>
+                <Link className="button button--course" href="/cursos/cerebros-digitales">Conocer la biblioteca</Link>
               </div>
             </article>
           </div>

@@ -29,8 +29,21 @@ export default function Tienda() {
           <div className="section-heading">
             <p className="eyebrow">Cursos online</p>
             <h2>Aprendizaje para el bienestar</h2>
-            <p>Programas practicos para reducir el estres, recuperar la calma y fortalecer el bienestar cotidiano.</p>
+            <p>Experiencias digitales para comprender el cerebro, aprender a tu ritmo y fortalecer el bienestar cotidiano.</p>
           </div>
+
+          <article className="shop-feature">
+            <Image src="/assets/img/blog-los-cerebros-digitales.jpg" alt="Biblioteca interactiva Cerebros digitales" width={800} height={500} />
+            <div>
+              <p className="product-tag">Biblioteca interactiva</p>
+              <h3>Cerebros digitales</h3>
+              <p>Una experiencia con libro digital, videos, conversaciones y recursos para explorar cómo aprende el cerebro en la era de la inteligencia artificial.</p>
+              <div className="product-buy">
+                <span className="product-price">$50.000 COP</span>
+                <Link className="button button--primary" href="/cursos/cerebros-digitales">Conocer la experiencia</Link>
+              </div>
+            </div>
+          </article>
 
           <article className="shop-feature">
             <Image src="/assets/img/neurocalma-card.png" alt="Curso Neurocalma 444" width={800} height={500} />

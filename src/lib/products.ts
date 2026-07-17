@@ -5,6 +5,7 @@ export type DigitalProduct = {
   amountInCents: number;
   currency: "COP";
   delivery: "download" | "course";
+  enabledEnv?: string;
   blobPathEnv?: string;
   downloadFilename?: string;
 };
@@ -56,6 +57,15 @@ const products: DigitalProduct[] = [
     currency: "COP",
     delivery: "course",
   },
+  {
+    slug: "cerebros-digitales-interactivo",
+    referenceCode: "CEREBROS-INTERACTIVO",
+    name: "Biblioteca interactiva Cerebros digitales",
+    amountInCents: 5_000_000,
+    currency: "COP",
+    delivery: "course",
+    enabledEnv: "COURSE_CEREBROS_DIGITALES_ENABLED",
+  },
 ];
 
 export function getProduct(slug: string) {
@@ -75,7 +85,12 @@ export function getProductBlobPath(product: DigitalProduct) {
 
 export function isProductReady(product: DigitalProduct) {
   if (product.delivery === "course") {
+    const explicitlyEnabled = product.enabledEnv
+      ? process.env[product.enabledEnv]?.trim().toLowerCase() === "true"
+      : true;
+
     return Boolean(
+      explicitlyEnabled &&
       process.env.COURSE_APPS_SCRIPT_URL?.trim() &&
       process.env.COURSE_AUTOMATION_SECRET?.trim(),
     );
