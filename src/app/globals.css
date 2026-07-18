@@ -688,6 +688,12 @@ h3 {
 
 .service-card {
   overflow: hidden;
+  background: #ffffff;
+  border-radius: 16px;
+}
+
+.service-card h3 {
+  color: var(--navy);
 }
 
 .service-card img {
