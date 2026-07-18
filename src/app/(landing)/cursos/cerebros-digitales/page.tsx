@@ -132,38 +132,25 @@ export default function CerebrosDigitalesLanding() {
             <div className={styles.benefits__grid}>
               <article className={styles['benefit-card']}>
                 <div className={styles['benefit-badge']}>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <polygon points="10 8 16 12 10 16 10 8"></polygon>
-                  </svg>
+                  <Image src="/images/landing-cerebros/badge_videos.png" alt="18 videos" width={120} height={120} />
                 </div>
                 <h3>18 videos organizados en 5 capítulos.</h3>
               </article>
               <article className={styles['benefit-card']}>
                 <div className={styles['benefit-badge']}>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
-                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
-                    <line x1="12" x2="12" y1="19" y2="22"></line>
-                  </svg>
+                  <Image src="/images/landing-cerebros/badge_podcast.png" alt="3 podcasts" width={120} height={120} />
                 </div>
                 <h3>3 conversaciones tipo podcast.</h3>
               </article>
               <article className={styles['benefit-card']}>
                 <div className={styles['benefit-badge']}>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                  </svg>
+                  <Image src="/images/landing-cerebros/badge_libro.png" alt="Libro PDF" width={120} height={120} />
                 </div>
                 <h3>El libro completo en PDF.</h3>
               </article>
               <article className={styles['benefit-card']}>
                 <div className={styles['benefit-badge']}>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-3.18-4.52 2.5 2.5 0 0 1-1.06-2.6 2.5 2.5 0 0 1 3.58-2.22 2.5 2.5 0 0 1 5.37 1.34L9.5 2z"></path>
-                    <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 3.18-4.52 2.5 2.5 0 0 0 1.06-2.6 2.5 2.5 0 0 0-3.58-2.22 2.5 2.5 0 0 0-5.37 1.34L14.5 2z"></path>
-                  </svg>
+                  <Image src="/images/landing-cerebros/badge_diagnostico.png" alt="Diagnóstico interactivo" width={120} height={120} />
                 </div>
                 <h3>Diagnóstico interactivo.</h3>
               </article>
