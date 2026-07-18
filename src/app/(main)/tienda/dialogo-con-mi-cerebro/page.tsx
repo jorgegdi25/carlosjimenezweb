@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from 'next/image';
-import styles from './page.module.css';
+import styles from '../product.module.css';
 import { getProduct, isProductReady } from "@/lib/products";
 
 export const metadata: Metadata = {
