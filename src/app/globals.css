@@ -789,7 +789,7 @@ h3 {
 }
 
 .youtube-panel__brand img {
-  width: min(320px, 100%);
+  width: min(180px, 100%);
 }
 
 .post-card {

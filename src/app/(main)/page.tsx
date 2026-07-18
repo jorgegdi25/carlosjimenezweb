@@ -216,8 +216,7 @@ export default function Home() {
             </div>
           </div>
           <div className="youtube-panel">
-            <p className="eyebrow">Recursos</p>
-            <h2>Bienvenido a mi canal</h2>
+            <h3>Bienvenido a mi canal</h3>
             <p>Videos sobre ludica, neuropedagogia, neuromarketing y reflexiones para educacion, empresa y bienestar.</p>
             <div className="youtube-panel__brand">
               <Image src="/assets/img/youtube-logo.png" alt="YouTube" width={100} height={70} />
