@@ -84,7 +84,7 @@ export default function Home() {
           </div>
           <div className="bio__video">
             <iframe
-              src="https://www.youtube.com/embed/s0JRVuXEuto?rel=0"
+              src="https://www.youtube.com/embed/pRpPmaLtJy8?rel=0"
               title="Presentacion de Carlos Alberto Jimenez"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
