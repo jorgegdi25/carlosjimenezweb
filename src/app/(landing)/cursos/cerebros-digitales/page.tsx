@@ -128,27 +128,44 @@ export default function CerebrosDigitalesLanding() {
 
         <section className={styles.benefits} aria-labelledby="benefits-title">
           <div className={styles['section-shell']}>
-            <h2 id="benefits-title">Este curso te ayudará a:</h2>
+            <h2 id="benefits-title">El curso Cerebros Digitales incluye:</h2>
             <div className={styles.benefits__grid}>
               <article className={styles['benefit-card']}>
-                <div className={styles['benefit-badge']}>01</div>
-                <h3>Comprender la mente digital</h3>
-                <p>Descubre los cambios en la forma de aprender, relacionarnos y vivir en la cultura digital actual.</p>
+                <div className={styles['benefit-badge']}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                  </svg>
+                </div>
+                <h3>18 videos organizados en 5 capítulos.</h3>
               </article>
               <article className={styles['benefit-card']}>
-                <div className={styles['benefit-badge']}>02</div>
-                <h3>Inteligencia artificial y consumo</h3>
-                <p>Conecta la transformación tecnológica con el neuromarketing, las neuronas espejo y los estilos de consumo.</p>
+                <div className={styles['benefit-badge']}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                    <line x1="12" x2="12" y1="19" y2="22"></line>
+                  </svg>
+                </div>
+                <h3>3 conversaciones tipo podcast.</h3>
               </article>
               <article className={styles['benefit-card']}>
-                <div className={styles['benefit-badge']}>03</div>
-                <h3>Lúdica y aprendizaje</h3>
-                <p>Explora el juego digital como lenguaje, experiencia de aprendizaje y herramienta de transformación educativa.</p>
+                <div className={styles['benefit-badge']}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                  </svg>
+                </div>
+                <h3>El libro completo en PDF.</h3>
               </article>
               <article className={styles['benefit-card']}>
-                <div className={styles['benefit-badge']}>04</div>
-                <h3>Autoconocimiento práctico</h3>
-                <p>Aplica lo aprendido con diagnósticos interactivos sobre tu estilo de aprendizaje y comportamiento en línea.</p>
+                <div className={styles['benefit-badge']}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-3.18-4.52 2.5 2.5 0 0 1-1.06-2.6 2.5 2.5 0 0 1 3.58-2.22 2.5 2.5 0 0 1 5.37 1.34L9.5 2z"></path>
+                    <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 3.18-4.52 2.5 2.5 0 0 0 1.06-2.6 2.5 2.5 0 0 0-3.58-2.22 2.5 2.5 0 0 0-5.37 1.34L14.5 2z"></path>
+                  </svg>
+                </div>
+                <h3>Diagnóstico interactivo.</h3>
               </article>
             </div>
           </div>
