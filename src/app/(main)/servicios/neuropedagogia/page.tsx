@@ -60,9 +60,14 @@ export default function Neuropedagogia() {
               ></iframe>
             </div>
 
-            <div className="content-actions mt-8">
-              <a className="button button--primary" href="mailto:carlosjimenez575@gmail.com">Solicitar asesoria</a>
-              <Link className="button button--primary" href="/tienda#libros">Ver libros</Link>
+            <div className="book-promo">
+              <Image src="/assets/img/libro-dialogo-real.png" alt="Libro Diálogo con mi cerebro" width={140} height={200} className="book-promo__image" />
+              <div className="book-promo__content">
+                <h3>Adquiera aquí mi libro</h3>
+                <Link className="button button--primary" href="/tienda/dialogo-con-mi-cerebro">
+                  Adquirir el libro
+                </Link>
+              </div>
             </div>
           </article>
           <aside className="content-aside">

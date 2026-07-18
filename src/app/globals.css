@@ -1110,6 +1110,39 @@ h3 {
   font-size: 24px;
 }
 
+.book-promo {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 40px;
+  padding: 24px;
+  background: var(--soft);
+  border-radius: 8px;
+  border: 1px solid var(--line);
+}
+
+.book-promo__image {
+  flex-shrink: 0;
+  width: 140px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: var(--shadow);
+}
+
+.book-promo__content h3 {
+  margin-bottom: 16px;
+  margin-top: 0;
+  font-size: 24px;
+  color: var(--navy);
+}
+
+@media (max-width: 600px) {
+  .book-promo {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 .product-page {
   padding: 82px 0;
   background: var(--soft);

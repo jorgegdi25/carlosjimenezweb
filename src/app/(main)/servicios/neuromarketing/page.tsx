@@ -48,9 +48,17 @@ export default function Neuromarketing() {
             <p>El cerebro humano procesa emociones atravesadas por significados al consumir, destacando el aprendizaje lúdico como una de las formas preferidas del nativo digital para adquirir información.</p>
             <p>Este enfoque interdisciplinario permite una visión más profunda y ética del consumo y las decisiones de compra.</p>
 
-            <div className="content-actions mt-8">
-              <Link className="button button--primary" href="/contacto">Solicitar asesoría</Link>
-              <Link className="button button--light" href="/blog/el-neuromarketing-y-los-nativos-digitales">Leer artículo</Link>
+            <p>Si uno no conoce el cerebro humano del consumidor, difícilmente podrá vender un producto o servicio.</p>
+            <p>Te invitamos a realizar los siguientes diagnósticos y si tienes alguna duda contáctenos.</p>
+
+            <div className="book-promo">
+              <Image src="/assets/img/libro-neuromarketing-real.png" alt="Libro Neuromarketing" width={140} height={200} className="book-promo__image" />
+              <div className="book-promo__content">
+                <h3>Adquiera aquí mi libro</h3>
+                <Link className="button button--primary" href="/tienda/el-neuromarketing">
+                  Adquirir el libro
+                </Link>
+              </div>
             </div>
           </article>
           <aside className="content-aside">

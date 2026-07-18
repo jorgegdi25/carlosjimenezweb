@@ -66,9 +66,17 @@ export default function LudicaYJuego() {
               </div>
             </div>
 
-            <div className="content-actions mt-8">
-              <a className="button button--primary" href="mailto:carlosjimenez575@gmail.com">Solicitar asesoria</a>
-              <Link className="button button--primary" href="/blog/el-juego-y-la-ludica-desde-el-vientre-materno">Leer articulo</Link>
+            <p>En esta sección encontrará la relación que hay entre la Neuropedagogía y la Lúdica, la cual es fundamental para poder comprender mejor el proceso de enseñanza - aprendizaje.</p>
+            <p>De esta forma es prioritario elaborar diagnósticos cerebrales para iniciar cualquier proceso educativo.</p>
+
+            <div className="book-promo">
+              <Image src="/assets/img/libro-cerebros-real.png" alt="Libro Cerebros Digitales" width={140} height={200} className="book-promo__image" />
+              <div className="book-promo__content">
+                <h3>Adquiera aquí mi libro</h3>
+                <Link className="button button--primary" href="/tienda/cerebros-digitales">
+                  Adquirir el libro
+                </Link>
+              </div>
             </div>
           </article>
           <aside className="content-aside">
