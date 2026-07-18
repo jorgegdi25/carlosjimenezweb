@@ -23,10 +23,27 @@ export default function LudicaYJuego() {
       <section className="section">
         <div className="container content-grid">
           <article className="content-panel">
-            <h2>Juego, creatividad y aprendizaje</h2>
-            <p>Desarrollamos consultorias y asesorias a traves de cursos, seminarios y reuniones personales sobre ludica, juego, neuroludica, neuropedagogia, creatividad y procesos de aprendizaje.</p>
-            <p>El juego se entiende como una dimension vital de la experiencia humana: permite crear, simbolizar, relacionarse, aprender y transformar ambientes educativos y organizacionales.</p>
-            <p>Este servicio puede adaptarse a talleres docentes, programas institucionales, seminarios empresariales y acompañamientos de formacion.</p>
+            <h2>La lúdica: el puente entre posibilidad y libertad</h2>
+            <p>La lúdica es una experiencia cultural que trasciende actividades específicas o modas pasajeras. Es un proceso esencial del desarrollo humano en sus dimensiones psíquica, social, cultural y biológica, ligado a la creatividad y al sentido de la vida cotidiana.</p>
+            
+            <h2>Lúdica como proceso humano integral</h2>
+            <p>Más que juegos, la lúdica implica actitudes y predisposiciones que atraviesan nuestra corporalidad y mente. Actividades como el arte, el humor, el amor, el baile, e incluso actos simples como “mirar vitrinas” o “sentarse en una banca”, generan emociones profundas sin buscar otra recompensa que la gratitud y la felicidad.</p>
+            
+            <div className="relative h-0 overflow-hidden my-8 rounded-lg pb-[56.25%]">
+              <iframe 
+                src="https://www.youtube.com/embed/Ck9rZKfXIsE" 
+                className="absolute top-0 left-0 w-full h-full"
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen
+              ></iframe>
+            </div>
+
+            <h2>El impacto biológico de la lúdica</h2>
+            <p>La lúdica estimula la producción de endorfinas, dopamina y serotonina, moléculas asociadas al placer, la felicidad y la creatividad. Estas sustancias son fundamentales en la búsqueda del sentido de la vida y el bienestar humano.</p>
+            
+            <h2>Un cambio de perspectiva</h2>
+            <p>Ampliar nuestra comprensión de la lúdica permite transformar nuestra manera de mirar el mundo, integrando el aprendizaje y el disfrute en una experiencia natural y placentera. La lúdica es mucho más que juego; es una herramienta para conectar con nuestra esencia y disfrutar del viaje de la vida.</p>
             
             <div className="grid gap-4 my-8" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}>
               <div className="relative h-0 overflow-hidden rounded-lg pb-[56.25%]">
@@ -49,7 +66,7 @@ export default function LudicaYJuego() {
               </div>
             </div>
 
-            <div className="content-actions">
+            <div className="content-actions mt-8">
               <a className="button button--primary" href="mailto:carlosjimenez575@gmail.com">Solicitar asesoria</a>
               <Link className="button button--primary" href="/blog/el-juego-y-la-ludica-desde-el-vientre-materno">Leer articulo</Link>
             </div>
