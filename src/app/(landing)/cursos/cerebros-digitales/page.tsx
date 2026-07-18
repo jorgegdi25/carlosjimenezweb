@@ -127,11 +127,10 @@ export default function CerebrosDigitalesLanding() {
         <nav className={styles.desktopNav} aria-label="Navegación de la biblioteca">
           <a href="#inicio">Inicio</a>
           <a href="#contenido">Contenido</a>
-          <a href="#incluye">¿Qué incluye?</a>
+          <a href="#incluye">Incluye</a>
           <a href="#funciona">Cómo funciona</a>
           <a href="#autor">Autor</a>
           <Link href="/diagnosticos/cerebros-digitales">Diagnóstico</Link>
-          <a href="#acceso">Acceso</a>
         </nav>
 
         <details className={styles.mobileMenu}>
@@ -156,8 +155,8 @@ export default function CerebrosDigitalesLanding() {
           href="#acceso"
           aria-label="Ver opciones de acceso"
         >
-          <span aria-hidden="true">▣</span>
-          Acceso ilimitado
+          Comprar ahora
+          <span aria-hidden="true">→</span>
         </a>
       </header>
 
