@@ -93,7 +93,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section" id="cursos" style={{ backgroundColor: '#e3eaf5', borderTop: '1px solid var(--line)', borderBottom: '1px solid var(--line)' }}>
+      <section className="section" id="cursos" style={{ backgroundColor: '#c9d5e8', borderTop: '1px solid var(--line)', borderBottom: '1px solid var(--line)' }}>
         <div className="container">
           <div className="section-heading">
             <p className="eyebrow">Aprende a tu ritmo</p>
