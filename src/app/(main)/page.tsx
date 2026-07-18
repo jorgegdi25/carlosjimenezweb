@@ -207,7 +207,7 @@ export default function Home() {
           <div className="youtube-player">
             <div className="youtube-player__frame">
               <iframe
-                src="https://www.youtube.com/embed/3xDVON1FyNU?rel=0"
+                src="https://www.youtube.com/embed/eiAYXJqRopI?rel=0"
                 title="Ludica y juego con Carlos Alberto Jimenez"
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
