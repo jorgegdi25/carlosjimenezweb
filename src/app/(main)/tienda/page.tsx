@@ -124,16 +124,6 @@ export default function Tienda() {
         </div>
       </section>
 
-      <section className="section section--blue">
-        <div className="container shop-help">
-          <div>
-            <p className="eyebrow">Siguiente paso</p>
-            <h2>Conectar Wompi</h2>
-            <p>Cuando tengamos los enlaces de pago, cada boton se actualiza con su URL de checkout. No se necesita carrito ni base de datos para vender productos individuales.</p>
-          </div>
-          <a className="button button--light" href="mailto:carlosjimenez575@gmail.com">Solicitar informacion</a>
-        </div>
-      </section>
     </>
   );
 }
