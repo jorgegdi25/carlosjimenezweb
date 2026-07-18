@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { BookOpenText, BrainCircuit, Headphones, Video } from "lucide-react";
 import styles from "./page.module.css";
 
 export default function CerebrosDigitalesLanding() {
@@ -131,26 +132,26 @@ export default function CerebrosDigitalesLanding() {
             <h2 id="benefits-title">El curso Cerebros Digitales incluye:</h2>
             <div className={styles.benefits__grid}>
               <article className={styles['benefit-card']}>
-                <div className={styles['benefit-badge']}>
-                  <Image src="/images/landing-cerebros/badge_videos.png" alt="18 videos" width={120} height={120} />
+                <div className={styles['benefit-badge']} aria-hidden="true">
+                  <Video />
                 </div>
                 <h3>18 videos organizados en 5 capítulos.</h3>
               </article>
               <article className={styles['benefit-card']}>
-                <div className={styles['benefit-badge']}>
-                  <Image src="/images/landing-cerebros/badge_podcast.png" alt="3 podcasts" width={120} height={120} />
+                <div className={styles['benefit-badge']} aria-hidden="true">
+                  <Headphones />
                 </div>
                 <h3>3 conversaciones tipo podcast.</h3>
               </article>
               <article className={styles['benefit-card']}>
-                <div className={styles['benefit-badge']}>
-                  <Image src="/images/landing-cerebros/badge_libro.png" alt="Libro PDF" width={120} height={120} />
+                <div className={styles['benefit-badge']} aria-hidden="true">
+                  <BookOpenText />
                 </div>
                 <h3>El libro completo en PDF.</h3>
               </article>
               <article className={styles['benefit-card']}>
-                <div className={styles['benefit-badge']}>
-                  <Image src="/images/landing-cerebros/badge_diagnostico.png" alt="Diagnóstico interactivo" width={120} height={120} />
+                <div className={styles['benefit-badge']} aria-hidden="true">
+                  <BrainCircuit />
                 </div>
                 <h3>Diagnóstico interactivo.</h3>
               </article>

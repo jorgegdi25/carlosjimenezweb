@@ -415,12 +415,18 @@
 }
 
 .benefit-card {
+  --benefit-accent: #55d6ff;
+  --benefit-accent-soft: rgba(85, 214, 255, 0.14);
   position: relative;
-  padding: 24px 18px;
+  min-height: 214px;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  padding: 28px 18px 24px;
   text-align: center;
-  border: 1px solid rgba(1, 202, 145, 0.12);
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(112, 194, 255, 0.18);
+  border-radius: 8px;
+  background: rgba(13, 31, 68, 0.72);
   backdrop-filter: blur(10px);
   box-shadow: var(--shadow-soft);
   transition: all 500ms cubic-bezier(0.16, 1, 0.3, 1);
@@ -428,49 +434,80 @@
   counter-increment: benefit-count;
 }
 
+.benefit-card:nth-child(2),
+.benefit-card:nth-child(4) {
+  --benefit-accent: #ffe44d;
+  --benefit-accent-soft: rgba(255, 228, 77, 0.13);
+}
+
+.benefit-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 3px;
+  background: var(--benefit-accent);
+  opacity: 0.82;
+}
+
 .benefit-card::after {
   content: "0" counter(benefit-count);
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 14px;
+  right: 16px;
   font-family: var(--font-heading);
-  font-size: 5rem;
+  font-size: 4.6rem;
   font-weight: 900;
-  color: rgba(1, 202, 145, 0.05);
+  color: var(--benefit-accent-soft);
   line-height: 1;
   pointer-events: none;
 }
 
 .benefit-card:hover {
-  transform: translateY(-12px);
-  box-shadow: var(--shadow-glow);
-  border-color: var(--color-green);
-}
-
-.benefit-card:hover img {
-  transform: scale(1.15) rotate(5deg);
-}
-
-.benefit-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transition: transform 500ms ease;
+  transform: translateY(-8px);
+  border-color: var(--benefit-accent);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.26);
 }
 
 .benefit-card .benefit-badge {
-  width: 120px;
-  height: 120px;
-  filter: none;
-  display: block;
-  margin: 0 auto 20px;
+  position: relative;
+  z-index: 1;
+  width: 78px;
+  height: 78px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 22px;
+  color: var(--benefit-accent);
+  border: 1px solid color-mix(in srgb, var(--benefit-accent) 48%, transparent);
+  border-radius: 8px;
+  background: var(--benefit-accent-soft);
+  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.025);
+  transition: transform 450ms cubic-bezier(0.16, 1, 0.3, 1), background-color 300ms ease;
+}
+
+.benefit-card .benefit-badge svg {
+  width: 40px;
+  height: 40px;
+  stroke-width: 1.8;
+  transition: transform 450ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.benefit-card:hover .benefit-badge {
+  transform: translateY(-3px);
+  background: color-mix(in srgb, var(--benefit-accent) 20%, transparent);
+}
+
+.benefit-card:hover .benefit-badge svg {
+  transform: scale(1.08);
 }
 
 .benefit-card h3 {
-  margin: 0 0 10px;
-  color: var(--color-lime);
+  position: relative;
+  z-index: 1;
+  max-width: 230px;
+  margin: 0;
+  color: var(--color-white);
   font-size: 1.08rem;
-  line-height: 1.2;
+  line-height: 1.35;
 }
 
 .benefit-card p {
