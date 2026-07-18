@@ -277,7 +277,8 @@ a {
 
 .hero .eyebrow,
 .section--blue .eyebrow,
-.footer .eyebrow {
+.footer .eyebrow,
+.bio .eyebrow {
   color: var(--yellow);
 }
 
@@ -584,15 +585,31 @@ h3 {
 }
 
 .bio {
-  background: #fff;
+  position: relative;
+  background: #020a1c url("/assets/img/fondo-caj.jpg") center / cover no-repeat;
+}
+
+.bio::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(2, 8, 22, 0.65), rgba(2, 8, 22, 0.88)),
+    linear-gradient(90deg, rgba(2, 8, 22, 0.86), rgba(2, 8, 22, 0.62));
+  pointer-events: none;
+}
+
+.bio .container {
+  position: relative;
+  z-index: 1;
 }
 
 .bio__copy h2 {
-  color: var(--navy);
+  color: #ffffff;
 }
 
 .bio__copy p:not(.eyebrow) {
-  color: #3f4d65;
+  color: #e2e8f0;
   line-height: 1.75;
 }
 
