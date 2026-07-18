@@ -104,7 +104,7 @@ export default function CerebrosDigitalesLanding() {
                   <Image src="/images/landing-neurocalma/kLnsBmT16B.svg" alt="" width={24} height={24} />
                 </span>
                 <span>
-                  <strong>Comprar ahora - $30.000 COP</strong>
+                  <strong>Comprar ahora - $40.000 COP</strong>
                   <small>Pago seguro con Wompi y acceso inmediato</small>
                 </span>
               </Link>
@@ -187,7 +187,7 @@ export default function CerebrosDigitalesLanding() {
                 <Image src="/images/landing-neurocalma/kLnsBmT16B.svg" alt="" width={24} height={24} />
               </span>
               <span>
-                <strong>Comprar ahora - $30.000 COP</strong>
+                <strong>Comprar ahora - $40.000 COP</strong>
                 <small>Acceso inmediato al curso online</small>
               </span>
             </Link>
@@ -214,7 +214,7 @@ export default function CerebrosDigitalesLanding() {
           <div className={styles['sticky-cta__content']}>
             <div className={styles['sticky-cta__price']}>
               <span>Biblioteca interactiva Cerebros Digitales</span>
-              <strong>$30.000 COP</strong>
+              <strong>$40.000 COP</strong>
             </div>
             <Link
               className={`${styles.button} ${styles['button--buy']} ${styles['button--small']}`}

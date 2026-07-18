@@ -39,7 +39,7 @@ export default function Tienda() {
               <h3>Cerebros digitales</h3>
               <p>Una experiencia con libro digital, videos, conversaciones y recursos para explorar cómo aprende el cerebro en la era de la inteligencia artificial.</p>
               <div className="product-buy">
-                <span className="product-price">$50.000 COP</span>
+                <span className="product-price">$40.000 COP</span>
                 <Link className="button button--primary" href="/cursos/cerebros-digitales">Conocer la experiencia</Link>
               </div>
             </div>

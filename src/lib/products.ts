@@ -61,7 +61,7 @@ const products: DigitalProduct[] = [
     slug: "cerebros-digitales-interactivo",
     referenceCode: "CEREBROS-INTERACTIVO",
     name: "Biblioteca interactiva Cerebros digitales",
-    amountInCents: 5_000_000,
+    amountInCents: 4_000_000,
     currency: "COP",
     delivery: "course",
     enabledEnv: "COURSE_CEREBROS_DIGITALES_ENABLED",
