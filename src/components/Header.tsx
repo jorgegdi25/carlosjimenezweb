@@ -45,7 +45,8 @@ export default function Header() {
         <Link href="/tienda#libros" onClick={() => setIsOpen(false)}>Mis libros</Link>
         <Link href="/#cursos" onClick={() => setIsOpen(false)}>Cursos</Link>
         <Link href="/#servicios" onClick={() => setIsOpen(false)}>Servicios</Link>
-        <Link href="/#recursos" onClick={() => setIsOpen(false)}>Recursos</Link>
+        <a href="https://www.youtube.com/channel/UCb3wQOP_oDblvA9XplkiGKw" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>Mi Canal</a>
+        <Link href="/blog" onClick={() => setIsOpen(false)}>Blog</Link>
         <Link href="/contacto" onClick={() => setIsOpen(false)}>Contacto</Link>
       </nav>
     </header>
