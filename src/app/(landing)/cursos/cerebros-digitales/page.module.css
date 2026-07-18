@@ -68,7 +68,7 @@
   color: var(--color-white);
   background-image: var(--hero-bg, url("/assets/img/cerebro-digital-fondo.png"));
   background-size: cover;
-  background-position: center;
+  background-position: left center;
 }
 
 .hero__shade {
