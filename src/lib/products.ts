@@ -73,9 +73,14 @@ export function getProduct(slug: string) {
 }
 
 export function getProductFromReference(reference: string) {
-  return products.find((product) =>
-    reference.startsWith(`CAJ-${product.referenceCode}-`),
-  );
+  return products
+    .filter((product) =>
+      reference.startsWith(`CAJ-${product.referenceCode}-`),
+    )
+    .sort(
+      (first, second) =>
+        second.referenceCode.length - first.referenceCode.length,
+    )[0];
 }
 
 export function getProductBlobPath(product: DigitalProduct) {
