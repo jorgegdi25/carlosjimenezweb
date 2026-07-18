@@ -452,10 +452,9 @@
 }
 
 .benefit-card img {
-  width: 62px;
-  height: 62px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
-  filter: var(--icon-green-filter);
   transition: transform 500ms ease;
 }
 
