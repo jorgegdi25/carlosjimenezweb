@@ -1094,7 +1094,10 @@ h3 {
 
 .product-page {
   padding: 82px 0;
-  background: var(--navy, #263770);
+  background-color: var(--navy, #263770);
+  background-image: url(https://carlosalbertojimenez.com.co/wp-content/uploads/2024/09/banner.webp);
+  background-size: cover;
+  background-position: center;
   color: #ffffff;
 }
 
@@ -1120,6 +1123,16 @@ h3 {
 .product-page p {
   color: #e2e8f0;
   font-size: 19px;
+}
+
+.product-page .button--primary {
+  background-color: #ebac23;
+  color: #1a234b;
+  font-weight: bold;
+}
+
+.product-page .button--primary:hover {
+  background-color: #d1961c;
 }
 
 .product-list {
