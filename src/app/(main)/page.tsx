@@ -123,7 +123,7 @@ export default function Home() {
             <article className="course-card">
               <Image className="course-card__image" src="/assets/img/blog-los-cerebros-digitales.jpg" alt="Biblioteca interactiva Cerebros digitales" width={600} height={400} />
               <div className="course-card__content">
-                <h3>Biblioteca interactiva Cerebros digitales</h3>
+                <h3>CEREBROS DIGITALES e inteligencia artificial</h3>
                 <p>Libro, videos, conversaciones y recursos para comprender el aprendizaje en la era de la inteligencia artificial.</p>
                 <Link className="button button--course" href="/cursos/cerebros-digitales">Conocer la biblioteca</Link>
               </div>
