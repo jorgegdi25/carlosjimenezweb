@@ -1,8 +1,16 @@
 # Prueba de acceso automatico al curso
 
-Esta carpeta contiene el proyecto de Google Apps Script para compartir de forma privada la carpeta de prueba:
+Esta carpeta contiene el proyecto de Google Apps Script para compartir de forma privada los cursos despues de un pago aprobado en Wompi.
 
 `1T1l6-11l7LR0X9MntAS82OfwQCdh5xL_`
+
+El proyecto rapido tambien reconoce estos productos:
+
+| Referencia | Producto | Carpeta | Precio |
+| --- | --- | --- | --- |
+| `CAJ-CURSO-TEST-` | Curso de prueba | `1T1l6-11l7LR0X9MntAS82OfwQCdh5xL_` | $20.000 COP |
+| `CAJ-NEUROCALMA-444-` | Neurocalma 444 | `1haJPsNSXJ0WVFm9saZodkWe6mycG173u` | $30.000 COP |
+| `CAJ-CEREBROS-INTERACTIVO-` | Biblioteca interactiva Cerebros digitales | `1zvGKwEMDJhY_u-mvnMd7PYl6FlKbbELs` | $50.000 COP |
 
 ## Primera prueba, sin pago
 
@@ -43,6 +51,9 @@ Despues de aprobar la prueba manual:
 5. Copiar la URL final terminada en `/exec`.
 
 La URL se configurara en Vercel como `COURSE_APPS_SCRIPT_URL`. Wompi seguira llamando al webhook existente de Vercel; no se debe reemplazar la URL de eventos actual.
+
+Para probar Cerebros Digitales, la referencia que debe generar la web comienza por
+`CAJ-CEREBROS-INTERACTIVO-` y el valor debe ser `5000000` centavos de COP.
 
 ## Seguridad
 

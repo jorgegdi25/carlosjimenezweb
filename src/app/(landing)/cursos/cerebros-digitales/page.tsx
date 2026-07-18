@@ -29,6 +29,7 @@ const inclusions = [
     icon: "✦",
     title: "Diagnósticos interactivos",
     copy: "Reconoce cómo aprende tu cerebro con recursos diseñados por el autor.",
+    href: "/diagnosticos/cerebros-digitales",
   },
 ];
 
@@ -47,6 +48,45 @@ const steps = [
     number: "03",
     title: "Aprende a tu ritmo",
     copy: "Ingresa desde computador, tableta o celular y avanza por cada recurso.",
+  },
+];
+
+const courseModules = [
+  {
+    number: "00",
+    title: "Introducción",
+    copy: "Una bienvenida para entrar en la experiencia y ubicar las ideas centrales del recorrido.",
+    lessons: ["Presentación de Cerebros digitales"],
+  },
+  {
+    number: "01",
+    title: "El cerebro digital",
+    copy: "Comprende los cambios en la forma de aprender, relacionarnos y vivir en la cultura digital.",
+    lessons: ["Introducción al capítulo", "El cerebro digital", "Nativos digitales", "El cerebro digital del adolescente"],
+  },
+  {
+    number: "02",
+    title: "Revolución digital y consumo",
+    copy: "Conecta la transformación tecnológica con el neuromarketing, las neuronas espejo y los estilos de consumo.",
+    lessons: ["Introducción al capítulo", "Revolución digital", "Neuromarketing digital", "Neuronas espejo", "Desarrollo y estilos de consumo"],
+  },
+  {
+    number: "03",
+    title: "Lúdica y juego digital",
+    copy: "Explora el juego como lenguaje, experiencia de aprendizaje y herramienta de transformación.",
+    lessons: ["Introducción al capítulo", "La lúdica digital", "Ludoterapias digitales", "Teorías del juego"],
+  },
+  {
+    number: "04",
+    title: "Educación digital y artística",
+    copy: "Mira las posibilidades educativas y creativas que se abren cuando comprendemos la cultura digital.",
+    lessons: ["Introducción al capítulo", "Educación digital", "Educación artística"],
+  },
+  {
+    number: "05",
+    title: "Diagnósticos cerebrales",
+    copy: "Cierra el recorrido aplicando lo aprendido con una mirada práctica y orientativa sobre el cerebro.",
+    lessons: ["Diagnósticos cerebrales"],
   },
 ];
 
@@ -86,9 +126,11 @@ export default function CerebrosDigitalesLanding() {
 
         <nav className={styles.desktopNav} aria-label="Navegación de la biblioteca">
           <a href="#inicio">Inicio</a>
+          <a href="#contenido">Contenido</a>
           <a href="#incluye">¿Qué incluye?</a>
           <a href="#funciona">Cómo funciona</a>
           <a href="#autor">Autor</a>
+          <Link href="/diagnosticos/cerebros-digitales">Diagnóstico</Link>
           <a href="#acceso">Acceso</a>
         </nav>
 
@@ -100,9 +142,11 @@ export default function CerebrosDigitalesLanding() {
           </summary>
           <nav aria-label="Navegación móvil">
             <a href="#inicio">Inicio</a>
+            <a href="#contenido">Contenido</a>
             <a href="#incluye">¿Qué incluye?</a>
             <a href="#funciona">Cómo funciona</a>
             <a href="#autor">Autor</a>
+            <Link href="/diagnosticos/cerebros-digitales">Diagnóstico</Link>
             <a href="#acceso">Acceso</a>
           </nav>
         </details>
@@ -175,6 +219,58 @@ export default function CerebrosDigitalesLanding() {
           </div>
         </section>
 
+        <section className={styles.curriculum} id="contenido">
+          <div className={styles.shell}>
+            <div className={styles.sectionHeading}>
+              <p>Una ruta completa de aprendizaje</p>
+              <h2>¿Qué vas a encontrar dentro?</h2>
+              <span className={styles.headingLine} aria-hidden="true"></span>
+            </div>
+            <div className={styles.curriculumIntro}>
+              <p>
+                La biblioteca está organizada para que avances desde la
+                introducción hasta la aplicación práctica, con contenidos que
+                puedes volver a consultar cuando lo necesites.
+              </p>
+              <div className={styles.curriculumStats} aria-label="Resumen del contenido">
+                <span><strong>18</strong> videos</span>
+                <span><strong>5</strong> capítulos</span>
+                <span><strong>3</strong> podcasts</span>
+                <span><strong>1</strong> libro PDF</span>
+              </div>
+            </div>
+            <div className={styles.moduleGrid}>
+              {courseModules.map((module) => (
+                <article className={styles.moduleCard} key={module.number}>
+                  <div className={styles.moduleHeader}>
+                    <span>{module.number}</span>
+                    <p>{module.lessons.length} {module.lessons.length === 1 ? "recurso" : "recursos"}</p>
+                  </div>
+                  <h3>{module.title}</h3>
+                  <p className={styles.moduleCopy}>{module.copy}</p>
+                  <ul>
+                    {module.lessons.map((lesson) => <li key={lesson}>{lesson}</li>)}
+                  </ul>
+                </article>
+              ))}
+            </div>
+            <div className={styles.resourceStrip}>
+              <div>
+                <span className={styles.resourceIcon} aria-hidden="true">◉</span>
+                <p><strong>Podcast</strong> Tres conversaciones para escuchar y profundizar.</p>
+              </div>
+              <div>
+                <span className={styles.resourceIcon} aria-hidden="true">▤</span>
+                <p><strong>Libro digital</strong> La obra completa como material de consulta.</p>
+              </div>
+              <div>
+                <span className={styles.resourceIcon} aria-hidden="true">✦</span>
+                <p><strong>Diagnóstico</strong> Una experiencia interactiva para aplicar lo aprendido.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section
           className={styles.experience}
           aria-label="La biblioteca se adapta a computador, tableta y celular"
@@ -205,6 +301,11 @@ export default function CerebrosDigitalesLanding() {
                   <span className={styles.featureIcon} aria-hidden="true">{item.icon}</span>
                   <h3>{item.title}</h3>
                   <p>{item.copy}</p>
+                  {item.href && (
+                    <Link className={styles.featureLink} href={item.href}>
+                      Hacer diagnóstico <span aria-hidden="true">→</span>
+                    </Link>
+                  )}
                 </article>
               ))}
             </div>

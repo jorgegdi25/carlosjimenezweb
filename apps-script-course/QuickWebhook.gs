@@ -10,6 +10,12 @@ var COURSE_PRODUCTS = [
     name: "Neurocalma 444",
     folderId: "1haJPsNSXJ0WVFm9saZodkWe6mycG173u",
     priceInCents: 3000000
+  },
+  {
+    referencePrefix: "CAJ-CEREBROS-INTERACTIVO-",
+    name: "Biblioteca interactiva Cerebros digitales",
+    folderId: "1zvGKwEMDJhY_u-mvnMd7PYl6FlKbbELs",
+    priceInCents: 5000000
   }
 ];
 

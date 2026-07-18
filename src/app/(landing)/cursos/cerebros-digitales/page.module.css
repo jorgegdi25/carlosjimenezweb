@@ -648,6 +648,170 @@
   scroll-margin-top: 94px;
 }
 
+.curriculum {
+  padding: 82px 0 78px;
+  background: #071a33;
+  color: #fff;
+}
+
+.curriculum .sectionHeading p {
+  color: #79d7e5;
+}
+
+.curriculum .sectionHeading h2 {
+  color: #fff;
+}
+
+.headingLine {
+  display: block;
+  width: 54px;
+  height: 3px;
+  margin: 18px auto 0;
+  background: var(--gold);
+}
+
+.curriculumIntro {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 0 auto 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.curriculumIntro > p {
+  max-width: 560px;
+  margin: 0;
+  color: #c6d2e2;
+  line-height: 1.6;
+}
+
+.curriculumStats {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  gap: 18px;
+  color: #b6c5d8;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.curriculumStats span {
+  display: grid;
+  gap: 4px;
+}
+
+.curriculumStats strong {
+  color: #fff;
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 1.55rem;
+  line-height: 1;
+}
+
+.moduleGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.moduleCard {
+  min-width: 0;
+  padding: 22px;
+  background: #102b4b;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 7px;
+}
+
+.moduleCard:hover {
+  border-color: rgba(121, 215, 229, 0.7);
+}
+
+.moduleHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.moduleHeader span {
+  color: #79d7e5;
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.moduleHeader p {
+  margin: 0;
+  color: #aebfd2;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.moduleCard h3 {
+  margin: 22px 0 0;
+  color: #fff;
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.08;
+}
+
+.moduleCopy {
+  min-height: 67px;
+  margin: 11px 0 16px;
+  color: #c6d2e2;
+  font-size: 0.83rem;
+  line-height: 1.5;
+}
+
+.moduleCard ul {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding: 14px 0 0 17px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  color: #f2f6fb;
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
+.resourceStrip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  margin-top: 24px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.resourceStrip > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 17px 18px;
+  background: #0b2340;
+}
+
+.resourceStrip p {
+  margin: 0;
+  color: #c6d2e2;
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.resourceStrip strong {
+  display: block;
+  color: #fff;
+}
+
+.resourceIcon {
+  flex: 0 0 auto;
+  color: #f1c35c;
+  font-size: 1.35rem;
+}
+
 .includes {
   padding: 78px 0 66px;
   background: #fff;
@@ -706,6 +870,22 @@
   color: var(--muted);
   font-size: 0.83rem;
   line-height: 1.45;
+}
+
+.featureLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 14px;
+  color: var(--blue);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.featureLink:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .howItWorks {
@@ -1182,6 +1362,19 @@
     transform: none;
   }
 
+  .curriculumIntro {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .moduleGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .resourceStrip {
+    grid-template-columns: 1fr;
+  }
+
   .inclusionGrid {
     grid-template-columns: repeat(2, 1fr);
     gap: 42px 0;
@@ -1287,6 +1480,7 @@
   }
 
   .includes,
+  .curriculum,
   .howItWorks,
   .access {
     padding-block: 56px;
@@ -1299,6 +1493,21 @@
   .inclusionGrid {
     grid-template-columns: 1fr;
     gap: 0;
+  }
+
+  .curriculumStats {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    white-space: normal;
+  }
+
+  .moduleGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .moduleCopy {
+    min-height: 0;
   }
 
   .inclusionGrid article {
