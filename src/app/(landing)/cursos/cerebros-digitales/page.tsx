@@ -67,7 +67,7 @@ export default function CerebrosDigitalesLanding() {
           <div className={styles.hero__content} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <div className={styles.hero__intro}>
               <Image className={`${styles['brand-mark']} ${styles['reveal-hero']}`} src="/assets/img/logo-carlos-alberto-jimenez.png" alt="Cerebros Digitales" width={80} height={80} style={{ objectFit: 'contain' }} />
-              <p className={`${styles.eyebrow} ${styles['reveal-hero']}`}>Curso interactivo</p>
+              <p className={`${styles.eyebrow} ${styles['reveal-hero']}`}>Libro interactivo</p>
               <h1 className={styles['reveal-hero']}>
                 <span>CEREBROS</span>
                 <strong>DIGITALES</strong>
@@ -87,7 +87,7 @@ export default function CerebrosDigitalesLanding() {
               <iframe
                 id="course-video"
                 title="Video Cerebros Digitales"
-                src="https://www.youtube.com/embed/s0JRVuXEuto?rel=0"
+                src="https://www.youtube.com/embed/bYX50jlhGng?rel=0"
                 referrerPolicy="strict-origin-when-cross-origin"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen

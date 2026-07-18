@@ -66,9 +66,9 @@
   overflow: hidden;
   padding: 28px 16px 42px;
   color: var(--color-white);
-  background-image: var(--hero-bg, url("/images/landing-neurocalma/image neur.png"));
+  background-image: var(--hero-bg, url("/assets/img/fondo-caj.jpg"));
   background-size: cover;
-  background-position: 22% center;
+  background-position: center;
 }
 
 .hero__shade {
