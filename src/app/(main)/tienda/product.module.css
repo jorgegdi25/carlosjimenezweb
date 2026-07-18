@@ -114,6 +114,37 @@
   background-color: #1a2755;
 }
 
+.checkoutWarning {
+  color: var(--navy, #263770);
+  font-size: 20px;
+  max-width: 600px;
+  margin: 30px auto 0;
+  text-align: left;
+  background: #fff8f8;
+  padding: 20px 30px;
+  border-radius: 8px;
+  border: 1px solid #ffcdd2;
+}
+
+.checkoutWarning p {
+  margin: 0 0 10px 0;
+  font-weight: 800;
+}
+
+.checkoutWarning span {
+  color: #c33036;
+}
+
+.checkoutWarning ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.checkoutWarning li {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
 .testimonials {
   background-color: #ffffff;
   padding: 80px 0;

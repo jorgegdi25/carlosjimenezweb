@@ -81,9 +81,12 @@ export default function CerebrosDigitales() {
               <span className={styles.cta__button} style={{ opacity: 0.5, cursor: 'not-allowed' }}>Próximamente</span>
             )}
             
-            <p style={{ color: 'var(--muted)', fontSize: '14px', maxWidth: '400px', margin: '0 auto' }}>
-              <strong>Después de pagar:</strong> pulsa <em>Volver al comercio</em> en Wompi para descargar tu libro.
-            </p>
+            <div className={styles.checkoutWarning}>
+              <p><span>Advertencia:</span></p>
+              <ul>
+                <li><strong>Después de pagar:</strong> pulsa <em>Volver al comercio</em> en Wompi para descargar tu libro.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
