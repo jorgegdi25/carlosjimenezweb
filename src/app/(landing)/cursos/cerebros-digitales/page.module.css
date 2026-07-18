@@ -66,7 +66,7 @@
   overflow: hidden;
   padding: 28px 16px 42px;
   color: var(--color-white);
-  background-image: var(--hero-bg, url("/assets/img/fondo-caj.jpg"));
+  background-image: var(--hero-bg, url("/assets/img/cerebro-digital-fondo.png"));
   background-size: cover;
   background-position: center;
 }
