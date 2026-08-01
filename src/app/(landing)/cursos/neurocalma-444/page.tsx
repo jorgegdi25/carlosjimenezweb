@@ -27,7 +27,7 @@ export default function Neurocalma444() {
 
     // 2. Scroll Reveal Logic
     const revealItems = document.querySelectorAll(
-      `.${styles.benefits} h2, .${styles['benefit-card']}, .${styles.author__photo}, .${styles.author__bio}, .${styles.author} blockquote, .${styles['final-cta']}, .${styles.trust__grid}, .${styles.footer}, .${styles['reveal-hero']}`
+      `.${styles.benefits} h2, .${styles['benefit-card']}, .${styles.author__photo}, .${styles.author__bio}, .${styles.author__message}, .${styles['final-cta']}, .${styles.trust__grid}, .${styles.footer}, .${styles['reveal-hero']}`
     );
 
     revealItems.forEach((item, index) => {
@@ -133,24 +133,20 @@ export default function Neurocalma444() {
             <h2 id="benefits-title">Este curso te ayudará a:</h2>
             <div className={styles.benefits__grid}>
               <article className={styles['benefit-card']}>
-                <Image className={styles['benefit-badge']} src="/images/landing-neurocalma/benefit-reduce-green.png" alt="" width={64} height={64} />
+                <Image className={styles['benefit-badge']} src="/images/landing-neurocalma/benefit-reduce-green.png" alt="Reducir el estrés y la ansiedad" width={112} height={112} />
                 <h3>Reducir el estrés y la ansiedad</h3>
-                <p>Técnicas sencillas para calmar tu sistema nervioso y recuperar tranquilidad.</p>
               </article>
               <article className={styles['benefit-card']}>
-                <Image className={styles['benefit-badge']} src="/images/landing-neurocalma/benefit-calm-green.png" alt="" width={64} height={64} />
+                <Image className={styles['benefit-badge']} src="/images/landing-neurocalma/benefit-calm-green.png" alt="Encontrar más calma y equilibrio" width={112} height={112} />
                 <h3>Encontrar más calma y equilibrio</h3>
-                <p>Prácticas accesibles para pausar, respirar y volver a tu centro.</p>
               </article>
               <article className={styles['benefit-card']}>
-                <Image className={styles['benefit-badge']} src="/images/landing-neurocalma/benefit-focus-green.png" alt="" width={64} height={64} />
+                <Image className={styles['benefit-badge']} src="/images/landing-neurocalma/benefit-focus-green.png" alt="Mejorar el enfoque y la productividad" width={112} height={112} />
                 <h3>Mejorar tu enfoque y productividad</h3>
-                <p>Entrena tu mente para responder con claridad en lugar de reaccionar con tensión.</p>
               </article>
               <article className={styles['benefit-card']}>
-                <Image className={styles['benefit-badge']} src="/images/landing-neurocalma/duerme.png" alt="" width={64} height={64} />
+                <Image className={styles['benefit-badge']} src="/images/landing-neurocalma/duerme.png" alt="Dormir mejor cada noche" width={112} height={112} />
                 <h3>Dormir mejor cada noche</h3>
-                <p>Rutinas simples para descansar profundo y recuperar energía.</p>
               </article>
             </div>
           </div>
@@ -170,10 +166,13 @@ export default function Neurocalma444() {
                 neuroeducación lúdica, juego y neuromarketing.
               </p>
             </div>
-            <blockquote>
-              Neurocalma 444 reúne herramientas prácticas para vivir con menos estrés, más claridad
-              y mayor bienestar emocional.
-            </blockquote>
+            <div className={styles.author__message}>
+              <span>Bienestar para la vida diaria</span>
+              <p>
+                Herramientas prácticas para reducir el estrés, recuperar claridad y fortalecer el
+                bienestar emocional.
+              </p>
+            </div>
           </div>
 
           <div className={`${styles['section-shell']} ${styles['final-cta']}`}>

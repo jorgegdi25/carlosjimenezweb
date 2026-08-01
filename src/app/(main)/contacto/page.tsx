@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import type { Metadata } from "next";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contacto | Carlos Alberto Jimenez",
-  description: "Contacto de Carlos Alberto Jimenez para asesorias, cursos, libros y conferencias.",
+  title: "Contacto | Carlos Alberto Jiménez",
+  description: "Contacto de Carlos Alberto Jiménez para asesorías, cursos, libros y conferencias.",
 };
 
 export default function Contacto() {
@@ -27,10 +28,15 @@ export default function Contacto() {
           </article>
           <article className="contact-card">
             <h2>Temas frecuentes</h2>
-            <Link className="text-link" href="/servicios/neuromarketing">Asesoria en neuromarketing</Link>
-            <Link className="text-link" href="/servicios/ludica-y-juego">Ludica y juego</Link>
+            <Link className="text-link" href="/servicios/neuromarketing">Asesoría en neuromarketing</Link>
+            <Link className="text-link" href="/servicios/ludica-y-juego">Lúdica y juego</Link>
             <Link className="text-link" href="/tienda">Comprar libros o curso</Link>
           </article>
+        </div>
+      </section>
+      <section className="section">
+        <div className="container contact-page-form">
+          <ContactForm />
         </div>
       </section>
     </>

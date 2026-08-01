@@ -4,7 +4,7 @@ import Image from "next/image";
 import { getProduct, isProductReady } from "@/lib/products";
 
 export const metadata: Metadata = {
-  title: "Curso de prueba | Carlos Alberto Jimenez",
+  title: "Curso de prueba | Carlos Alberto Jiménez",
   description: "Producto privado para probar el acceso automatico al curso.",
   robots: { index: false, follow: false },
 };

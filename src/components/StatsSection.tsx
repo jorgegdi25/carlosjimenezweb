@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 const stats = [
   { value: 26, label: 'Libros de su autoria' },
   { value: 2, label: 'Seminarios nacionales dirigidos' },
-  { value: 1, label: 'Seminario internacional de neuropedagogia ludica en la Universidad Nacional' },
+  { value: 1, label: 'Seminario internacional de neuropedagogía lúdica en la Universidad Nacional' },
   { value: 8, label: 'Invitaciones a seminarios internacionales' },
   { value: 1, label: 'Foro internacional en España' },
 ];

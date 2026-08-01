@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 import Image from 'next/image';
 import styles from '../product.module.css';
 import { getProduct, isProductReady } from "@/lib/products";
+import BookPurchaseSection from "../BookPurchaseSection";
+import BookTestimonialsSection from "../BookTestimonialsSection";
 
 export const metadata: Metadata = {
-  title: "Cerebros digitales | Carlos Alberto Jimenez",
-  description: "Libro PDF Cerebros digitales de Carlos Alberto Jimenez.",
+  title: "Cerebros digitales | Carlos Alberto Jiménez",
+  description: "Libro PDF Cerebros digitales de Carlos Alberto Jiménez.",
 };
 
 export default function CerebrosDigitales() {
@@ -55,7 +57,7 @@ export default function CerebrosDigitales() {
         </div>
       </section>
 
-      {/* 3. Learnings and CTA */}
+      {/* 3. Learnings */}
       <section className={styles.learnings}>
         <div className="container">
           <ul className={styles.learnings__list}>
@@ -69,38 +71,14 @@ export default function CerebrosDigitales() {
               Realizarás diagnósticos cerebrales utilizando la teoría del cerebro total.
             </li>
           </ul>
-          
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px' }}>
-            {ready ? (
-              <form action="/api/wompi/checkout/cerebros-digitales" method="get">
-                <button className={styles.cta__button} type="submit">
-                  🛒 Adquirir el libro
-                </button>
-              </form>
-            ) : (
-              <span className={styles.cta__button} style={{ opacity: 0.5, cursor: 'not-allowed' }}>Próximamente</span>
-            )}
-            
-            <div className={styles.checkoutWarning}>
-              <p><span>Advertencia:</span></p>
-              <ul>
-                <li><strong>Después de pagar:</strong> pulsa <em>Volver al comercio</em> en Wompi para descargar tu libro.</li>
-              </ul>
-            </div>
-          </div>
         </div>
       </section>
 
       {/* 4. Testimonials */}
-      <section className={styles.testimonials}>
-        <div className="container">
-          <h2 className={styles.testimonials__heading}>+1000 Lectores Felices</h2>
-          <p className={styles.testimonials__text}>
-            "El libro Pedagogía de la práctica educativa del siglo xxi dentro de sus autores contó con los aportes teóricos del Dr. Carlos Alberto Jiménez para el capitulo 1 los cuales han sido de gran utilidad para nuera editorial en México."
-          </p>
-          <p className={styles.testimonials__author}>Editorial MAP porrúa - Universidad Autónoma de México</p>
-        </div>
-      </section>
+      <BookTestimonialsSection />
+
+      {/* 5. Purchase */}
+      <BookPurchaseSection ready={ready} checkoutPath="/api/wompi/checkout/cerebros-digitales" />
     </article>
   );
 }

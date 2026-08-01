@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 import Image from 'next/image';
 import styles from '../product.module.css';
 import { getProduct, isProductReady } from "@/lib/products";
+import BookPurchaseSection from "../BookPurchaseSection";
+import BookTestimonialsSection from "../BookTestimonialsSection";
 
 export const metadata: Metadata = {
-  title: "El Neuromarketing y el consumidor | Carlos Alberto Jimenez",
-  description: "Libro PDF El Neuromarketing y el consumidor de Carlos Alberto Jimenez.",
+  title: "El neuromarketing y el consumidor | Carlos Alberto Jiménez",
+  description: "Libro PDF El neuromarketing y el consumidor de Carlos Alberto Jiménez.",
 };
 
 export default function ElNeuromarketing() {
@@ -57,7 +59,7 @@ export default function ElNeuromarketing() {
         </div>
       </section>
 
-      {/* 3. Learnings and CTA */}
+      {/* 3. Learnings */}
       <section className={styles.learnings}>
         <div className="container">
           <ul className={styles.learnings__list}>
@@ -71,38 +73,14 @@ export default function ElNeuromarketing() {
               Generarás estrategias de marketing 4.0 para aumentar la productividad de tu empresa.
             </li>
           </ul>
-          
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px' }}>
-            {ready ? (
-              <form action="/api/wompi/checkout/el-neuromarketing" method="get">
-                <button className={styles.cta__button} type="submit">
-                  🛒 Adquirir el libro
-                </button>
-              </form>
-            ) : (
-              <span className={styles.cta__button} style={{ opacity: 0.5, cursor: 'not-allowed' }}>Próximamente</span>
-            )}
-            
-            <div className={styles.checkoutWarning}>
-              <p><span>Advertencia:</span></p>
-              <ul>
-                <li><strong>Después de pagar:</strong> pulsa <em>Volver al comercio</em> en Wompi para descargar tu libro.</li>
-              </ul>
-            </div>
-          </div>
         </div>
       </section>
 
       {/* 4. Testimonials */}
-      <section className={styles.testimonials}>
-        <div className="container">
-          <h2 className={styles.testimonials__heading}>+1000 Lectores Felices</h2>
-          <p className={styles.testimonials__text}>
-            "Este libro lo guiará para mejorar sus ventas y le ayudará a alcanzar la libertad financiera que anhela. Muy detallado y bien explicado. ¡Fue de gran utilidad para mi empresa!"
-          </p>
-          <p className={styles.testimonials__author}>Londonred - Carlos Londoño</p>
-        </div>
-      </section>
+      <BookTestimonialsSection />
+
+      {/* 5. Purchase */}
+      <BookPurchaseSection ready={ready} checkoutPath="/api/wompi/checkout/el-neuromarketing" />
     </article>
   );
 }

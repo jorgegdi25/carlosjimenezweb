@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import PaymentResult from "@/components/PaymentResult";
 
 export const metadata: Metadata = {
-  title: "Resultado del pago | Carlos Alberto Jimenez",
+  title: "Resultado del pago | Carlos Alberto Jiménez",
   robots: { index: false, follow: false },
 };
 

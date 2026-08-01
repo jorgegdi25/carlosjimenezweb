@@ -15,7 +15,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Carlos Alberto Jimenez",
+  title: "Carlos Alberto Jiménez",
   description: "Consultor, asesor y escritor en lúdica, juego, neuromarketing, neuroeducación y branding empresarial.",
 };
 

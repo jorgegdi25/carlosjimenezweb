@@ -3,7 +3,15 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { BookOpenText, BrainCircuit, Headphones, Video } from "lucide-react";
+import {
+  BadgeCheck,
+  BookOpenText,
+  BrainCircuit,
+  Clock3,
+  Headphones,
+  LockKeyhole,
+  Video,
+} from "lucide-react";
 import styles from "./page.module.css";
 
 export default function CerebrosDigitalesLanding() {
@@ -26,7 +34,7 @@ export default function CerebrosDigitalesLanding() {
     }
 
     const revealItems = document.querySelectorAll(
-      `.${styles.benefits} h2, .${styles['benefit-card']}, .${styles.author__photo}, .${styles.author__bio}, .${styles.author} blockquote, .${styles['final-cta']}, .${styles.trust__grid}, .${styles.footer}, .${styles['reveal-hero']}`
+      `.${styles.benefits} h2, .${styles['benefit-card']}, .${styles.author__photo}, .${styles.author__bio}, .${styles.author__message}, .${styles['final-cta']}, .${styles.trust__grid}, .${styles.footer}, .${styles['reveal-hero']}`
     );
 
     revealItems.forEach((item, index) => {
@@ -67,7 +75,12 @@ export default function CerebrosDigitalesLanding() {
           <div className={styles.hero__shade}></div>
           <div className={styles.hero__content} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <div className={styles.hero__intro}>
-              <Image className={`${styles['brand-mark']} ${styles['reveal-hero']}`} src="/assets/img/logo-carlos-alberto-jimenez.png" alt="Cerebros Digitales" width={80} height={80} style={{ objectFit: 'contain' }} />
+              <div
+                className={`${styles['brand-mark']} ${styles['reveal-hero']}`}
+                aria-hidden="true"
+              >
+                <BrainCircuit />
+              </div>
               <p className={`${styles.eyebrow} ${styles['reveal-hero']}`}>Libro interactivo</p>
               <h1 className={styles['reveal-hero']}>
                 <span>CEREBROS</span>
@@ -173,9 +186,13 @@ export default function CerebrosDigitalesLanding() {
                 neuroeducación lúdica, juego y neuromarketing.
               </p>
             </div>
-            <blockquote>
-              Cerebros Digitales reúne el libro interactivo, videos y recursos para comprender profundamente el aprendizaje en la era de la inteligencia artificial.
-            </blockquote>
+            <div className={styles.author__message}>
+              <span>Una experiencia interactiva</span>
+              <p>
+                Libro, videos y recursos para comprender cómo aprende el cerebro en la era de la
+                inteligencia artificial.
+              </p>
+            </div>
           </div>
 
           <div className={`${styles['section-shell']} ${styles['final-cta']}`}>
@@ -207,7 +224,28 @@ export default function CerebrosDigitalesLanding() {
             </a>
           </div>
         </section>
+
+        <section className={styles.trust} aria-label="Información de confianza">
+          <div className={`${styles['section-shell']} ${styles.trust__grid}`}>
+            <div>
+              <LockKeyhole aria-hidden="true" />
+              <p>Pago 100% seguro a través de Wompi</p>
+            </div>
+            <div>
+              <Clock3 aria-hidden="true" />
+              <p>Acceso inmediato al curso</p>
+            </div>
+            <div>
+              <BadgeCheck aria-hidden="true" />
+              <p>Garantía de satisfacción</p>
+            </div>
+          </div>
+        </section>
       </main>
+
+      <footer className={styles.footer}>
+        <Link href="/">www.carlosalbertojimenez.com.co</Link>
+      </footer>
 
       <div className={`${styles['sticky-cta']} ${isStickyVisible ? styles['is-visible'] : ''}`} aria-hidden={!isStickyVisible}>
         <div className={styles['sticky-cta__inner']}>

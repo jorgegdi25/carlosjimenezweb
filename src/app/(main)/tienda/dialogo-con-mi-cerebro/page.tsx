@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 import Image from 'next/image';
 import styles from '../product.module.css';
 import { getProduct, isProductReady } from "@/lib/products";
+import BookPurchaseSection from "../BookPurchaseSection";
+import BookTestimonialsSection from "../BookTestimonialsSection";
 
 export const metadata: Metadata = {
-  title: "Dialogo Con Mi Cerebro | Carlos Alberto Jimenez",
-  description: "Libro PDF Dialogo Con Mi Cerebro de Carlos Alberto Jimenez.",
+  title: "Diálogo con mi cerebro | Carlos Alberto Jiménez",
+  description: "Libro PDF Diálogo con mi cerebro de Carlos Alberto Jiménez.",
 };
 
 export default function DialogoConMiCerebro() {
@@ -55,7 +57,7 @@ export default function DialogoConMiCerebro() {
         </div>
       </section>
 
-      {/* 3. Learnings and CTA */}
+      {/* 3. Learnings */}
       <section className={styles.learnings}>
         <div className="container">
           <ul className={styles.learnings__list}>
@@ -69,38 +71,14 @@ export default function DialogoConMiCerebro() {
               Realizarás diagnósticos cerebrales y en especial las teorías del cerebro total.
             </li>
           </ul>
-          
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px' }}>
-            {ready ? (
-              <form action="/api/wompi/checkout/dialogo-con-mi-cerebro" method="get">
-                <button className={styles.cta__button} type="submit">
-                  🛒 Adquirir el libro
-                </button>
-              </form>
-            ) : (
-              <span className={styles.cta__button} style={{ opacity: 0.5, cursor: 'not-allowed' }}>Próximamente</span>
-            )}
-            
-            <div className={styles.checkoutWarning}>
-              <p><span>Advertencia:</span></p>
-              <ul>
-                <li><strong>Después de pagar:</strong> pulsa <em>Volver al comercio</em> en Wompi para descargar tu libro.</li>
-              </ul>
-            </div>
-          </div>
         </div>
       </section>
 
       {/* 4. Testimonials */}
-      <section className={styles.testimonials}>
-        <div className="container">
-          <h2 className={styles.testimonials__heading}>+1000 Lectores Felices</h2>
-          <p className={styles.testimonials__text}>
-            "Nos encontramos muy agradecidos con la obra de Carlos Jimenez, pudimos realizar dos libros para nuestra especialización (Pedagogía Lúdica, Pedagogía de la Lúdica y la Creatividad)."
-          </p>
-          <p className={styles.testimonials__author}>Universidad Juan de Castellanos</p>
-        </div>
-      </section>
+      <BookTestimonialsSection />
+
+      {/* 5. Purchase */}
+      <BookPurchaseSection ready={ready} checkoutPath="/api/wompi/checkout/dialogo-con-mi-cerebro" />
     </article>
   );
 }

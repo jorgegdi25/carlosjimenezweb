@@ -4,8 +4,8 @@ import { getSortedPostsData } from '@/lib/blog';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog | Carlos Alberto Jimenez",
-  description: "Articulos de Carlos Alberto Jimenez sobre ludica, aprendizaje, sexualidad, neuroeducacion, salud emocional y cultura digital.",
+  title: "Blog | Carlos Alberto Jiménez",
+  description: "Artículos de Carlos Alberto Jiménez sobre lúdica, aprendizaje, sexualidad, neuroeducación, salud emocional y cultura digital.",
 };
 
 export default function BlogList() {
@@ -17,7 +17,7 @@ export default function BlogList() {
         <div className="container">
           <p className="eyebrow">Blog</p>
           <h1>Mi blog</h1>
-          <p>Articulos de Carlos Alberto Jimenez sobre ludica, aprendizaje, sexualidad, neuroeducacion, salud emocional y cultura digital.</p>
+          <p>Artículos de Carlos Alberto Jiménez sobre lúdica, aprendizaje, sexualidad, neuroeducación, salud emocional y cultura digital.</p>
         </div>
       </section>
       <section className="section section--light">

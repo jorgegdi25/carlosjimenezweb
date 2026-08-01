@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: "Respirar para vivir mejor | Carlos Alberto Jimenez",
+  title: "Respirar para vivir mejor | Carlos Alberto Jiménez",
   description: "Curso digital Respirar para vivir mejor, de la ansiedad a la tranquilidad.",
 };
 

@@ -1,6 +1,13 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import StatsSection from '../../components/StatsSection';
+
+export const metadata: Metadata = {
+  title: 'Carlos Alberto Jiménez | Neurociencia y neuroeducación',
+  description:
+    'Neurociencia aplicada al bienestar emocional, la educación, el neuromarketing y el éxito empresarial. Conoce los libros, cursos y servicios de Carlos Alberto Jiménez.',
+};
 
 const heroLinks = [
   {
@@ -13,13 +20,13 @@ const heroLinks = [
     title: 'Compra mis libros',
     href: '/tienda#libros',
     image: '/assets/img/mis-libros.png',
-    alt: 'Libros de Carlos Alberto Jimenez',
+    alt: 'Libros de Carlos Alberto Jiménez',
   },
   {
-    title: 'Ludica y juego',
+    title: 'Lúdica y juego',
     href: '/servicios/ludica-y-juego',
     image: '/assets/img/ludica.png',
-    alt: 'Ludica y juego',
+    alt: 'Lúdica y juego',
   },
   {
     title: 'Neuromarketing',
@@ -28,10 +35,10 @@ const heroLinks = [
     alt: 'Redes neuronales para neuromarketing',
   },
   {
-    title: 'Neuropedagogia ludica',
+    title: 'Neuropedagogía lúdica',
     href: '/servicios/neuropedagogia',
     image: '/assets/img/neuropedagogia.png',
-    alt: 'Estudiantes en una actividad de neuropedagogia ludica',
+    alt: 'Estudiantes en una actividad de neuropedagogía lúdica',
   },
 ];
 
@@ -43,19 +50,26 @@ export default function Home() {
         <div className="hero__inner">
           <div className="hero__stage">
             <div className="hero__content">
-              <h1>Carlos Alberto<br />Jimenez</h1>
+              <h1>
+                <span>Neurociencia</span> para el bienestar, la educación y el éxito empresarial
+              </h1>
               <span className="hero__accent" aria-hidden="true"></span>
-              <p>Consultor, asesor y escritor en ludica, juego, neuromarketing y neuroeducacion.</p>
+              <p className="hero__intro-copy">
+                Ideas y herramientas sobre neuroeducación, neuromarketing, lúdica y desarrollo
+                emocional.
+              </p>
+              <p className="hero__proof">26 libros publicados</p>
             </div>
             <div className="hero__figure">
               <Image
-                src="/assets/img/carlos-hero.webp"
-                alt="Carlos Alberto Jimenez, escritor y neuropedagogo"
-                width={500}
-                height={537}
+                src="/assets/img/carlos-hero-clean.png"
+                alt="Carlos Alberto Jiménez sosteniendo un modelo de cerebro"
+                width={1024}
+                height={1024}
                 priority
-                sizes="(max-width: 760px) 78vw, 430px"
+                sizes="(max-width: 760px) 88vw, 500px"
               />
+              <p className="hero__name">Carlos Alberto Jiménez</p>
             </div>
           </div>
           <nav className="hero-links" aria-label="Accesos destacados">
@@ -78,14 +92,14 @@ export default function Home() {
         <div className="container bio__grid">
           <div className="bio__copy">
             <p className="eyebrow">Biografia</p>
-            <h2>Carlos Alberto Jimenez</h2>
-            <p>El doctor Carlos Alberto Jimenez Velez es consultor y asesor en ludica, juego, neuromarketing, neuroeducacion y branding empresarial. Magister en comunicacion y educacion y autor de 26 libros.</p>
+            <h2>Carlos Alberto Jiménez</h2>
+            <p>El doctor Carlos Alberto Jiménez Vélez es consultor y asesor en lúdica, juego, neuromarketing, neuroeducación y branding empresarial. Magíster en comunicación y educación y autor de 26 libros.</p>
             <Link className="button button--primary" href="/biografia">Biografia</Link>
           </div>
           <div className="bio__video">
             <iframe
               src="https://www.youtube.com/embed/pRpPmaLtJy8?rel=0"
-              title="Presentacion de Carlos Alberto Jimenez"
+              title="Presentación de Carlos Alberto Jiménez"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
@@ -121,11 +135,11 @@ export default function Home() {
             </article>
 
             <article className="course-card">
-              <Image className="course-card__image" src="/assets/img/blog-los-cerebros-digitales.jpg" alt="Biblioteca interactiva Cerebros digitales" width={600} height={400} />
+              <Image className="course-card__image" src="/assets/img/cerebro-digital-fondo.png" alt="Cerebros digitales e inteligencia artificial" width={600} height={400} />
               <div className="course-card__content">
                 <h3>CEREBROS DIGITALES e inteligencia artificial</h3>
                 <p>Libro, videos, conversaciones y recursos para comprender el aprendizaje en la era de la inteligencia artificial.</p>
-                <Link className="button button--course" href="/cursos/cerebros-digitales">Conocer la biblioteca</Link>
+                <Link className="button button--course" href="/cursos/cerebros-digitales">Ir al libro interactivo</Link>
               </div>
             </article>
           </div>
@@ -149,16 +163,16 @@ export default function Home() {
               </div>
             </article>
             <article className="service-card">
-              <Image src="/assets/img/ludica.jpg" alt="Ludica y juego" width={800} height={500} />
+              <Image src="/assets/img/ludica.jpg" alt="Lúdica y juego" width={800} height={500} />
               <div>
-                <h3>Ludica y juego</h3>
+                <h3>Lúdica y juego</h3>
                 <Link className="text-link" href="/servicios/ludica-y-juego">Haz clic aqui</Link>
               </div>
             </article>
             <article className="service-card">
-              <Image src="/assets/img/neuropedagogia.jpg" alt="Neuropedagogia ludica" width={800} height={500} />
+              <Image src="/assets/img/neuropedagogia.jpg" alt="Neuropedagogía lúdica" width={800} height={500} />
               <div>
-                <h3>Neuropedagogia ludica</h3>
+                <h3>Neuropedagogía lúdica</h3>
                 <Link className="text-link" href="/servicios/neuropedagogia">Haz clic aqui</Link>
               </div>
             </article>
@@ -208,7 +222,7 @@ export default function Home() {
             <div className="youtube-player__frame">
               <iframe
                 src="https://www.youtube.com/embed/eiAYXJqRopI?rel=0"
-                title="Ludica y juego con Carlos Alberto Jimenez"
+                title="Lúdica y juego con Carlos Alberto Jiménez"
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowFullScreen
@@ -217,7 +231,7 @@ export default function Home() {
           </div>
           <div className="youtube-panel">
             <h3>Bienvenido a mi canal</h3>
-            <p>Videos sobre ludica, neuropedagogia, neuromarketing y reflexiones para educacion, empresa y bienestar.</p>
+            <p>Videos sobre lúdica, neuropedagogía, neuromarketing y reflexiones para educación, empresa y bienestar.</p>
             <div className="youtube-panel__brand">
               <Image src="/assets/img/youtube-logo.png" alt="YouTube" width={100} height={70} />
             </div>
@@ -244,10 +258,10 @@ export default function Home() {
               </div>
             </article>
             <article className="post-card">
-              <Image src="/assets/img/blog-juego.jpg" alt="Articulo El juego y la ludica desde el vientre materno" width={600} height={400} />
+              <Image src="/assets/img/blog-juego.jpg" alt="Artículo El juego y la lúdica desde el vientre materno" width={600} height={400} />
               <div>
-                <h3>El juego y la ludica desde el vientre materno</h3>
-                <p>Para la construccion del concepto de inteligencia ludica, se requiere comprender el juego desde sus primeras manifestaciones.</p>
+                <h3>El juego y la lúdica desde el vientre materno</h3>
+                <p>Para la construcción del concepto de inteligencia lúdica, se requiere comprender el juego desde sus primeras manifestaciones.</p>
                 <Link className="text-link" href="/blog/el-juego-y-la-ludica-desde-el-vientre-materno">Leer mas</Link>
               </div>
             </article>

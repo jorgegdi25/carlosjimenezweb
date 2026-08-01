@@ -1,0 +1,3 @@
+# Archivos locales de revisión; no son necesarios en producción.
+tmp/
+docs/
