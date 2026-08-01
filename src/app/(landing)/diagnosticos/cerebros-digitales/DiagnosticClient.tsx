@@ -418,7 +418,7 @@ export default function DiagnosticClient() {
                 </button>
                 <Link href="/cursos/cerebros-digitales">
                   <BookOpen aria-hidden="true" size={18} />
-                  Conocer la biblioteca
+                  Ir al libro interactivo
                 </Link>
               </div>
             </div>

@@ -52,4 +52,4 @@ tags: post
 <p><strong>2</strong> Con esta técnica de Stuart Campbell, el feto se ve en tercera dimensión a diferencia de las técnicas con ultrasonido que sólo captan dos dimensiones.</p>
 <p><strong>3</strong> En el sueño paradójico hay actividad mental, la cual no es controlada por la voluntad y por consiguiente “esconde” “conserva” “sublima”, entre muchas otras cosas: deseos, ilusiones, ausencias o miedos inconscientes de carácter arquetípico. Es de aclarar que en esta fase del sueño estamos inmóviles, pero realizamos movimiento de los ojos de un lado a otro, muy diferente al sueño ligero o profundo.</p>
 <p><strong>4</strong> Los estados de regresión perinatal, son terapias que utilizan la relajación, la hiperventilación por espacios prolongados y música evocadora.</p>
-<p><strong>CARLOS ALBERTO JIMENEZ V.</strong></p>
+<p><strong>CARLOS ALBERTO JIMÉNEZ V.</strong></p>

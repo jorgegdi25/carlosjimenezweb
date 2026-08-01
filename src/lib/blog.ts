@@ -42,7 +42,7 @@ export function getSortedPostsData(): BlogPost[] {
         title: matterResult.data.title || 'Untitled',
         description: matterResult.data.description || matterResult.data.summary || '',
         date: parsedDate,
-        author: matterResult.data.author || 'Carlos Alberto Jimenez',
+        author: matterResult.data.author || 'Carlos Alberto Jiménez',
         tags: matterResult.data.tags || [],
         image: matterResult.data.image || '',
       };
@@ -90,7 +90,7 @@ export async function getPostData(slug: string): Promise<BlogPost> {
     title: matterResult.data.title || 'Untitled',
     description: matterResult.data.description || matterResult.data.summary || '',
     date: parsedDate,
-    author: matterResult.data.author || 'Carlos Alberto Jimenez',
+    author: matterResult.data.author || 'Carlos Alberto Jiménez',
     tags: matterResult.data.tags || [],
     image: matterResult.data.image || '',
   };

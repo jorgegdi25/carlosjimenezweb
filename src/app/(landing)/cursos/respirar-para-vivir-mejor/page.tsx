@@ -27,7 +27,7 @@ export default function RespirarParaVivirMejor() {
 
     // 2. Scroll Reveal Logic
     const revealItems = document.querySelectorAll(
-      `.${styles.benefits} h2, .${styles['benefit-card']}, .${styles.author__photo}, .${styles.author__bio}, .${styles.author} blockquote, .${styles.author__cta}, .${styles.footer}`
+      `.${styles.benefits} h2, .${styles['benefit-card']}, .${styles.author__photo}, .${styles.author__bio}, .${styles.author__message}, .${styles.author__cta}, .${styles.footer}`
     );
 
     revealItems.forEach((item, index) => {
@@ -154,34 +154,30 @@ export default function RespirarParaVivirMejor() {
           <div className={styles['section-shell']}>
             <h2 id="benefits-title">Este curso te ayudará a:</h2>
             <div className={styles.benefits__grid}>
-              <article className={styles['benefit-card']}>
-                <span className={styles['benefit-card__icon']} aria-hidden="true">
-                  <Image className={styles['benefit-badge']} src="/images/landing-respirar/benefit-reduce-blue.png" alt="" width={64} height={64} />
+              <div className={styles['benefit-card']}>
+                <span className={styles['benefit-card__icon']}>
+                  <Image className={styles['benefit-badge']} src="/images/landing-respirar/benefit-reduce-blue.png" alt="Reducir el estrés" width={112} height={112} />
                 </span>
                 <h3>Reducir el estrés de forma natural</h3>
-                <p>Técnicas de respiración simples para calmar tu mente y volver a tu centro.</p>
-              </article>
-              <article className={styles['benefit-card']}>
-                <span className={styles['benefit-card__icon']} aria-hidden="true">
-                  <Image className={styles['benefit-badge']} src="/images/landing-respirar/benefit-focus-blue.png" alt="" width={64} height={64} />
+              </div>
+              <div className={styles['benefit-card']}>
+                <span className={styles['benefit-card__icon']}>
+                  <Image className={styles['benefit-badge']} src="/images/landing-respirar/benefit-focus-blue.png" alt="Recuperar la calma" width={112} height={112} />
                 </span>
                 <h3>Mejorar tu concentración y descanso</h3>
-                <p>Más claridad mental durante el día y mejor calidad de sueño por la noche.</p>
-              </article>
-              <article className={styles['benefit-card']}>
-                <span className={styles['benefit-card__icon']} aria-hidden="true">
-                  <Image className={styles['benefit-badge']} src="/images/landing-respirar/benefit-calm-blue.png" alt="" width={64} height={64} />
+              </div>
+              <div className={styles['benefit-card']}>
+                <span className={styles['benefit-card__icon']}>
+                  <Image className={styles['benefit-badge']} src="/images/landing-respirar/benefit-calm-blue.png" alt="Mejorar la concentración" width={112} height={112} />
                 </span>
                 <h3>Técnicas simples que puedes aplicar hoy</h3>
-                <p>Ejercicios prácticos, fáciles de seguir y pensados para tu vida diaria.</p>
-              </article>
-              <article className={styles['benefit-card']}>
-                <span className={styles['benefit-card__icon']} aria-hidden="true">
-                  <Image className={styles['benefit-badge']} src="/images/landing-respirar/duerme.png" alt="" width={64} height={64} />
+              </div>
+              <div className={styles['benefit-card']}>
+                <span className={styles['benefit-card__icon']}>
+                  <Image className={styles['benefit-badge']} src="/images/landing-respirar/duerme.png" alt="Dormir mejor" width={112} height={112} />
                 </span>
                 <h3>Resultados reales en tu bienestar</h3>
-                <p>Más tranquilidad, equilibrio emocional y bienestar en pocos minutos al día.</p>
-              </article>
+              </div>
             </div>
           </div>
         </section>
@@ -200,10 +196,13 @@ export default function RespirarParaVivirMejor() {
                 neuroeducación lúdica, juego y neuromarketing.
               </p>
             </div>
-            <blockquote>
-              Este curso reúne herramientas prácticas para ayudarte a respirar mejor, manejar el
-              estrés y recuperar bienestar en tu vida diaria.
-            </blockquote>
+            <div className={styles.author__message}>
+              <span>Bienestar que puedes practicar</span>
+              <p>
+                Técnicas sencillas de respiración para manejar el estrés y recuperar la calma en la
+                vida diaria.
+              </p>
+            </div>
           </div>
           <div className={`${styles['section-shell']} ${styles.author__cta}`}>
             <a

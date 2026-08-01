@@ -3,8 +3,8 @@ import Image from 'next/image';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Tienda | Carlos Alberto Jimenez",
-  description: "Tienda estatica de cursos y libros de Carlos Alberto Jimenez, preparada para enlaces de pago Wompi.",
+  title: "Tienda | Carlos Alberto Jiménez",
+  description: "Tienda estática de cursos y libros de Carlos Alberto Jiménez, preparada para enlaces de pago Wompi.",
 };
 
 export default function Tienda() {
@@ -15,7 +15,7 @@ export default function Tienda() {
           <div>
             <p className="eyebrow">Tienda estatica</p>
             <h1>Cursos y libros</h1>
-            <p>Productos digitales de Carlos Alberto Jimenez con pagos seguros y entrega automatica de los contenidos.</p>
+            <p>Productos digitales de Carlos Alberto Jiménez con pagos seguros y entrega automática de los contenidos.</p>
           </div>
           <div className="shop-note">
             <strong>Pagos Wompi</strong>
@@ -33,14 +33,14 @@ export default function Tienda() {
           </div>
 
           <article className="shop-feature">
-            <Image src="/assets/img/blog-los-cerebros-digitales.jpg" alt="Biblioteca interactiva Cerebros digitales" width={800} height={500} />
+            <Image src="/assets/img/respirar-para-vivir.jpg" alt="Curso Respirar para vivir mejor" width={800} height={500} />
             <div>
-              <p className="product-tag">Biblioteca interactiva</p>
-              <h3>Cerebros digitales</h3>
-              <p>Una experiencia con libro digital, videos, conversaciones y recursos para explorar cómo aprende el cerebro en la era de la inteligencia artificial.</p>
+              <p className="product-tag">Curso digital</p>
+              <h3>Respirar para vivir mejor</h3>
+              <p>Un programa para trabajar respiración consciente, tranquilidad y autocuidado. Este producto puede conectarse luego a Wompi como curso o acceso digital.</p>
               <div className="product-buy">
-                <span className="product-price">$40.000 COP</span>
-                <Link className="button button--primary" href="/cursos/cerebros-digitales">Conocer la experiencia</Link>
+                <span className="product-price">USD 10</span>
+                <Link className="button button--primary" href="/cursos/respirar-para-vivir-mejor">Ir a la Landing de Venta</Link>
               </div>
             </div>
           </article>
@@ -50,7 +50,7 @@ export default function Tienda() {
             <div>
               <p className="product-tag">Curso digital</p>
               <h3>Neurocalma 444</h3>
-              <p>Guia practica para disminuir el estres y la ansiedad, encontrar equilibrio y mejorar el enfoque.</p>
+              <p>Guía práctica para disminuir el estrés y la ansiedad, encontrar equilibrio y mejorar el enfoque.</p>
               <div className="product-buy">
                 <span className="product-price">$30.000 COP</span>
                 <Link className="button button--primary" href="/cursos/neurocalma-444">Ver curso</Link>
@@ -59,14 +59,14 @@ export default function Tienda() {
           </article>
 
           <article className="shop-feature">
-            <Image src="/assets/img/respirar-para-vivir.jpg" alt="Curso Respirar para vivir mejor" width={800} height={500} />
+            <Image src="/assets/img/cerebro-digital-fondo.png" alt="Biblioteca interactiva Cerebros digitales" width={800} height={500} />
             <div>
-              <p className="product-tag">Curso digital</p>
-              <h3>Respirar para vivir mejor</h3>
-              <p>Un programa para trabajar respiracion consciente, tranquilidad y autocuidado. Este producto puede conectarse luego a Wompi como curso o acceso digital.</p>
+              <p className="product-tag">Biblioteca interactiva</p>
+              <h3>Cerebros digitales</h3>
+              <p>Una experiencia con libro digital, videos, conversaciones y recursos para explorar cómo aprende el cerebro en la era de la inteligencia artificial.</p>
               <div className="product-buy">
-                <span className="product-price">USD 10</span>
-                <Link className="button button--primary" href="/cursos/respirar-para-vivir-mejor">Ir a la Landing de Venta</Link>
+                <span className="product-price">$40.000 COP</span>
+                <Link className="button button--primary" href="/cursos/cerebros-digitales">Conocer la experiencia</Link>
               </div>
             </div>
           </article>

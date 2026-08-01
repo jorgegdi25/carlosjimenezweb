@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import type { Metadata } from "next";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Neuropedagogia Ludica | Carlos Alberto Jimenez",
-  description: "Asesorias de neuropedagogia ludica, neuroeducacion y procesos educativos basados en juego y cerebro.",
+  title: "Neuropedagogía lúdica | Carlos Alberto Jiménez",
+  description: "Asesorías de neuropedagogía lúdica, neuroeducación y procesos educativos basados en juego y cerebro.",
 };
 
 export default function Neuropedagogia() {
@@ -14,15 +15,19 @@ export default function Neuropedagogia() {
         <div className="container inner-hero__grid">
           <div>
             <p className="eyebrow">Servicio</p>
-            <h1>Neuropedagogia Ludica</h1>
-            <p>Formacion y asesorias para integrar neuroeducacion, ludica, juego, emociones y aprendizaje significativo.</p>
+            <h1>Neuropedagogía Lúdica</h1>
+            <p>Formación y asesorías para integrar neuroeducación, lúdica, juego, emociones y aprendizaje significativo.</p>
           </div>
-          <Image src="/assets/img/neuropedagogia.jpg" alt="Neuropedagogia ludica" width={600} height={400} />
+          <Image src="/assets/img/neuropedagogia.jpg" alt="Neuropedagogía lúdica" width={600} height={400} />
         </div>
       </section>
       <section className="section">
         <div className="container content-grid">
           <article className="content-panel">
+            <h2>Desarrollamos para empresas e instituciones educativas</h2>
+            <p>Consultorías y asesorías a través de cursos, seminarios y asesorías personales en:</p>
+            <p><strong>Neuromarketing, Neuroemprendimiento, Neuroliderazgo, Neuroeducación y Branding.</strong></p>
+
             <h2>¿Qué es la Neuropedagogía lúdica?</h2>
             <p>La neuropedagogía es una disciplina interdisciplinaria que integra conocimientos de la neurociencia, la pedagogía y la psicología para comprender cómo el cerebro humano aprende y se desarrolla en contextos educativos. Su objetivo principal es aplicar el conocimiento científico sobre el funcionamiento cerebral para mejorar los procesos de enseñanza y aprendizaje, teniendo en cuenta factores biológicos, sociales, emocionales y culturales.</p>
 
@@ -61,7 +66,7 @@ export default function Neuropedagogia() {
             </div>
 
             <div className="book-promo">
-              <Image src="/assets/img/libro-dialogo-real.png" alt="Libro Diálogo con mi cerebro" width={140} height={200} className="book-promo__image" />
+              <Image src="/assets/img/libro-dialogo-real.png" alt="Libro Diálogo con mi cerebro" width={150} height={200} className="book-promo__image" />
               <div className="book-promo__content">
                 <h3>Adquiera aquí mi libro</h3>
                 <Link className="button button--primary" href="/tienda/dialogo-con-mi-cerebro">
@@ -69,12 +74,22 @@ export default function Neuropedagogia() {
                 </Link>
               </div>
             </div>
+
+            <h2>Diagnósticos</h2>
+            <p>Si uno no conoce el cerebro humano del consumidor, difícilmente podrá vender un producto o servicio.</p>
+            <p>Le invitamos a realizar los siguientes diagnósticos y, si tiene alguna duda, contáctenos.</p>
+            <ul className="service-list">
+              <li>Diagnóstico de consumo</li>
+              <li>Diagnóstico del cerebro total</li>
+            </ul>
+
+            <ContactForm service="Neuropedagogía lúdica" />
           </article>
           <aside className="content-aside">
             <h2>Otros servicios</h2>
             <Link className="text-link" href="/servicios/neuromarketing">Neuromarketing</Link>
-            <Link className="text-link" href="/servicios/ludica-y-juego">Ludica y juego</Link>
-            <Link className="text-link" href="/blog">Articulos</Link>
+            <Link className="text-link" href="/servicios/ludica-y-juego">Lúdica y juego</Link>
+            <Link className="text-link" href="/blog">Artículos</Link>
           </aside>
         </div>
       </section>

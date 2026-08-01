@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import type { Metadata } from "next";
+import { ExternalLink, FileText } from "lucide-react";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Neuromarketing | Carlos Alberto Jimenez",
+  title: "Neuromarketing | Carlos Alberto Jiménez",
   description: "Asesorias, cursos y seminarios de neuromarketing para empresas e instituciones educativas.",
 };
 
@@ -23,6 +25,10 @@ export default function Neuromarketing() {
       <section className="section">
         <div className="container content-grid">
           <article className="content-panel">
+            <h2>Desarrollamos para empresas e instituciones educativas</h2>
+            <p>Consultorías y asesorías a través de cursos, seminarios y asesorías personales en:</p>
+            <p><strong>Neuromarketing, Neuroemprendimiento, Neuroliderazgo, Neuroeducación y Branding.</strong></p>
+
             <h2>¿Qué es Neuromarketing?</h2>
             <p>El neuromarketing es una herramienta de la neuroeconomía que estudia cómo el cerebro humano influye en el consumo, ya sea por decisiones racionales para maximizar ganancias o por impulsos emocionales. A diferencia de la economía clásica, el consumo humano no siempre es lógico ni predecible.</p>
             
@@ -48,11 +54,8 @@ export default function Neuromarketing() {
             <p>El cerebro humano procesa emociones atravesadas por significados al consumir, destacando el aprendizaje lúdico como una de las formas preferidas del nativo digital para adquirir información.</p>
             <p>Este enfoque interdisciplinario permite una visión más profunda y ética del consumo y las decisiones de compra.</p>
 
-            <p>Si uno no conoce el cerebro humano del consumidor, difícilmente podrá vender un producto o servicio.</p>
-            <p>Te invitamos a realizar los siguientes diagnósticos y si tienes alguna duda contáctenos.</p>
-
             <div className="book-promo">
-              <Image src="/assets/img/libro-neuromarketing-real.png" alt="Libro Neuromarketing" width={140} height={200} className="book-promo__image" />
+              <Image src="/assets/img/libro-neuromarketing-real.png" alt="Libro Neuromarketing" width={150} height={200} className="book-promo__image" />
               <div className="book-promo__content">
                 <h3>Adquiera aquí mi libro</h3>
                 <Link className="button button--primary" href="/tienda/el-neuromarketing">
@@ -60,11 +63,39 @@ export default function Neuromarketing() {
                 </Link>
               </div>
             </div>
+
+            <h2>Diagnósticos</h2>
+            <p>Si uno no conoce el cerebro humano del consumidor, difícilmente podrá vender un producto o servicio.</p>
+            <p>Le invitamos a realizar los siguientes diagnósticos y, si tiene alguna duda, contáctenos.</p>
+            <ul className="service-list">
+              <li>Diagnóstico de consumo</li>
+              <li>Diagnóstico del cerebro total</li>
+            </ul>
+
+            <div className="diagnostic-actions">
+              <a
+                className="diagnostic-pdf-button"
+                href="/documents/diagnostico-de-consumo.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="diagnostic-pdf-button__icon" aria-hidden="true">
+                  <FileText size={28} strokeWidth={2.2} />
+                </span>
+                <span className="diagnostic-pdf-button__text">
+                  <strong>Ver diagnóstico de consumo</strong>
+                  <small>Documento PDF · 2 páginas</small>
+                </span>
+                <ExternalLink className="diagnostic-pdf-button__external" size={21} aria-hidden="true" />
+              </a>
+            </div>
+
+            <ContactForm service="Neuromarketing" />
           </article>
           <aside className="content-aside">
             <h2>Otros servicios</h2>
-            <Link className="text-link" href="/servicios/ludica-y-juego">Ludica y juego</Link>
-            <Link className="text-link" href="/servicios/neuropedagogia">Neuropedagogia ludica</Link>
+            <Link className="text-link" href="/servicios/ludica-y-juego">Lúdica y juego</Link>
+            <Link className="text-link" href="/servicios/neuropedagogia">Neuropedagogía lúdica</Link>
             <Link className="text-link" href="/tienda#libros">Libros PDF</Link>
           </aside>
         </div>

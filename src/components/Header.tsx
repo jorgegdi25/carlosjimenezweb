@@ -23,8 +23,8 @@ export default function Header() {
 
   return (
     <header className={`site-header ${isScrolled ? 'is-scrolled' : ''}`} id="inicio">
-      <Link href="/" className="brand" aria-label="Carlos Alberto Jimenez">
-        <Image src="/assets/img/logo-amarillo.png" alt="Carlos Alberto Jimenez" width={500} height={188} priority />
+      <Link href="/" className="brand" aria-label="Carlos Alberto Jiménez">
+        <Image src="/assets/img/logo-amarillo.png" alt="Carlos Alberto Jiménez" width={500} height={188} priority />
       </Link>
       
       <button 
