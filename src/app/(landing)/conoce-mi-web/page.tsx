@@ -204,7 +204,7 @@ export default function ConoceMiWebPage() {
             <p>Aprender sobre el cerebro puede cambiar la forma en que vivimos y educamos.</p>
             <h2>Te invito a descubrir mi web</h2>
             <Link className={styles.lightButton} href="/">
-              Visitar carlosjimenez.vercel.app
+              Visitar carlosalbertojimenez.com.co
               <span aria-hidden="true">→</span>
             </Link>
           </div>
