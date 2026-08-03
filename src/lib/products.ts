@@ -42,14 +42,6 @@ const products: DigitalProduct[] = [
     downloadFilename: "cerebros-digitales-carlos-alberto-jimenez.pdf",
   },
   {
-    slug: "curso-prueba",
-    referenceCode: "CURSO-TEST",
-    name: "Curso de prueba",
-    amountInCents: 2_000_000,
-    currency: "COP",
-    delivery: "course",
-  },
-  {
     slug: "neurocalma-444",
     referenceCode: "NEUROCALMA-444",
     name: "Neurocalma 444",
