@@ -13,6 +13,8 @@ type PaymentResponse = {
   error?: string;
 };
 
+const MAX_AUTOMATIC_ATTEMPTS = 20;
+
 export default function PaymentResult({ transactionId }: { transactionId: string }) {
   const [result, setResult] = useState<PaymentResponse>(() =>
     transactionId
@@ -37,7 +39,7 @@ export default function PaymentResult({ transactionId }: { transactionId: string
         const body = (await response.json()) as PaymentResponse;
         setResult(body);
 
-        if (body.status === "PENDING" && attempt < 20) {
+        if (body.status === "PENDING" && attempt < MAX_AUTOMATIC_ATTEMPTS) {
           window.setTimeout(() => setAttempt((value) => value + 1), 3000);
         }
       } catch (error) {
@@ -101,12 +103,40 @@ export default function PaymentResult({ transactionId }: { transactionId: string
   }
 
   if (result.status === "PENDING") {
+    if (attempt >= MAX_AUTOMATIC_ATTEMPTS) {
+      return (
+        <div className="payment-status payment-status--pending" aria-live="polite">
+          <p className="payment-status__label">Pago aún pendiente</p>
+          <h1>Wompi continúa procesando la transacción</h1>
+          <p>
+            No realices otro pago. Puedes consultar nuevamente o solicitar ayuda
+            usando el número de transacción que aparece abajo.
+          </p>
+          <p className="payment-status__transaction">
+            Transacción: <code>{transactionId}</code>
+          </p>
+          <div className="payment-status__actions">
+            <button
+              className="button button--primary"
+              type="button"
+              onClick={() => setAttempt(0)}
+            >
+              Consultar nuevamente
+            </button>
+            <a className="button button--secondary" href="/contacto">
+              Solicitar ayuda
+            </a>
+          </div>
+        </div>
+      );
+    }
+
     return (
       <div className="payment-status payment-status--pending" aria-live="polite">
         <span className="payment-spinner" aria-hidden="true" />
         <p className="payment-status__label">Confirmando con Wompi</p>
         <h1>Estamos verificando tu pago</h1>
-        <p>Esta pantalla se actualiza automaticamente. No necesitas pagar de nuevo.</p>
+        <p>Esta pantalla se actualiza automáticamente. No necesitas pagar de nuevo.</p>
       </div>
     );
   }
