@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import DigitalPurchaseGuide from "@/components/DigitalPurchaseGuide";
+import VisitorCounter from "@/components/VisitorCounter";
 import styles from "./page.module.css";
 
 export default function RespirarParaVivirMejor() {
@@ -244,6 +245,7 @@ export default function RespirarParaVivirMejor() {
         <Link href="/" rel="noopener noreferrer">
           www.carlosalbertojimenez.com.co
         </Link>
+        <VisitorCounter />
       </footer>
 
       <div className={`${styles['sticky-cta']} ${isStickyVisible ? styles['is-visible'] : ''}`}>

@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import DigitalPurchaseGuide from "@/components/DigitalPurchaseGuide";
+import VisitorCounter from "@/components/VisitorCounter";
 import {
   BadgeCheck,
   BookOpenText,
@@ -248,6 +249,7 @@ export default function CerebrosDigitalesLanding() {
 
       <footer className={styles.footer}>
         <Link href="/">www.carlosalbertojimenez.com.co</Link>
+        <VisitorCounter />
       </footer>
 
       <div className={`${styles['sticky-cta']} ${isStickyVisible ? styles['is-visible'] : ''}`} aria-hidden={!isStickyVisible}>

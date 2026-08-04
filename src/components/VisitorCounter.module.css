@@ -1,0 +1,29 @@
+.counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  margin-top: 16px;
+  padding: 8px 12px;
+  color: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.07);
+  font-size: 0.85rem;
+  line-height: 1;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: #f4c430;
+  box-shadow: 0 0 0 4px rgba(244, 196, 48, 0.13);
+}
+
+.number {
+  color: #fff;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}

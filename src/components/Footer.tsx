@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import VisitorCounter from './VisitorCounter';
 
 export default function Footer() {
   return (
@@ -67,6 +68,7 @@ export default function Footer() {
           <a href="mailto:carlosjimenez575@gmail.com">carlosjimenez575@gmail.com</a>
           <a href="tel:+573104534160">+(57) 310 453 4160</a>
           <span>Pereira, Risaralda - Colombia</span>
+          <VisitorCounter />
         </address>
       </div>
     </footer>
