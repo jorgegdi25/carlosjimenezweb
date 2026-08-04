@@ -4,6 +4,7 @@ import styles from '../product.module.css';
 import { getProduct, isProductReady } from "@/lib/products";
 import BookPurchaseSection from "../BookPurchaseSection";
 import BookTestimonialsSection from "../BookTestimonialsSection";
+import DigitalPurchaseGuide from "@/components/DigitalPurchaseGuide";
 
 export const metadata: Metadata = {
   title: "Cerebros digitales | Carlos Alberto Jiménez",
@@ -73,6 +74,8 @@ export default function CerebrosDigitales() {
           </ul>
         </div>
       </section>
+
+      <DigitalPurchaseGuide kind="pdf-book" />
 
       {/* 4. Testimonials */}
       <BookTestimonialsSection />

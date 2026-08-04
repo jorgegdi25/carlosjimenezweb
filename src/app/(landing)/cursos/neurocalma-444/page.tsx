@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import DigitalPurchaseGuide from "@/components/DigitalPurchaseGuide";
 import styles from "./page.module.css";
 
 export default function Neurocalma444() {
@@ -151,6 +152,8 @@ export default function Neurocalma444() {
             </div>
           </div>
         </section>
+
+        <DigitalPurchaseGuide kind="drive-course" />
 
         <section className={styles.author} aria-label="Autor del curso">
           <div className={`${styles['section-shell']} ${styles.author__card}`}>

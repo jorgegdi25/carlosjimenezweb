@@ -4,6 +4,7 @@ import styles from '../product.module.css';
 import { getProduct, isProductReady } from "@/lib/products";
 import BookPurchaseSection from "../BookPurchaseSection";
 import BookTestimonialsSection from "../BookTestimonialsSection";
+import DigitalPurchaseGuide from "@/components/DigitalPurchaseGuide";
 
 export const metadata: Metadata = {
   title: "El neuromarketing y el consumidor | Carlos Alberto Jiménez",
@@ -77,6 +78,8 @@ export default function ElNeuromarketing() {
       </section>
 
       {/* 4. Testimonials */}
+      <DigitalPurchaseGuide kind="pdf-book" />
+
       <BookTestimonialsSection />
 
       {/* 5. Purchase */}
