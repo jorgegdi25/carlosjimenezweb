@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col font-sans js-enabled">
         {children}
       </body>
+      <GoogleAnalytics gaId="G-Y9GQ5FG2BB" />
     </html>
   );
 }
