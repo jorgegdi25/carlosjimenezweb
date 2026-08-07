@@ -228,7 +228,7 @@
   border-radius: 18px;
   background:
     linear-gradient(rgba(2, 31, 24, 0.2), rgba(2, 31, 24, 0.5)),
-    url("/images/landing-neurocalma/image neur.png") center / cover;
+    url("/images/landing-neurocalma/image-neur.webp") center / cover;
   box-shadow: 0 0 30px rgba(1, 202, 145, 0.3), var(--shadow-soft);
   --hero-delay: 480ms;
 }

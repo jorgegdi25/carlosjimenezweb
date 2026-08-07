@@ -135,19 +135,19 @@ export default function Neurocalma444() {
             <h2 id="benefits-title">Este curso te ayudará a:</h2>
             <div className={styles.benefits__grid}>
               <article className={styles['benefit-card']}>
-                <Image className={styles['benefit-badge']} src="/images/landing-neurocalma/benefit-reduce-green.png" alt="Reducir el estrés y la ansiedad" width={112} height={112} />
+                <Image className={styles['benefit-badge']} src="/images/landing-neurocalma/benefit-reduce-green.webp" alt="Reducir el estrés y la ansiedad" width={112} height={112} />
                 <h3>Reducir el estrés y la ansiedad</h3>
               </article>
               <article className={styles['benefit-card']}>
-                <Image className={styles['benefit-badge']} src="/images/landing-neurocalma/benefit-calm-green.png" alt="Encontrar más calma y equilibrio" width={112} height={112} />
+                <Image className={styles['benefit-badge']} src="/images/landing-neurocalma/benefit-calm-green.webp" alt="Encontrar más calma y equilibrio" width={112} height={112} />
                 <h3>Encontrar más calma y equilibrio</h3>
               </article>
               <article className={styles['benefit-card']}>
-                <Image className={styles['benefit-badge']} src="/images/landing-neurocalma/benefit-focus-green.png" alt="Mejorar el enfoque y la productividad" width={112} height={112} />
+                <Image className={styles['benefit-badge']} src="/images/landing-neurocalma/benefit-focus-green.webp" alt="Mejorar el enfoque y la productividad" width={112} height={112} />
                 <h3>Mejorar tu enfoque y productividad</h3>
               </article>
               <article className={styles['benefit-card']}>
-                <Image className={styles['benefit-badge']} src="/images/landing-neurocalma/duerme.png" alt="Dormir mejor cada noche" width={112} height={112} />
+                <Image className={styles['benefit-badge']} src="/images/landing-neurocalma/duerme.webp" alt="Dormir mejor cada noche" width={112} height={112} />
                 <h3>Dormir mejor cada noche</h3>
               </article>
             </div>
