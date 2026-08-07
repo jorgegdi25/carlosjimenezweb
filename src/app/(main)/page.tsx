@@ -62,7 +62,7 @@ export default function Home() {
             </div>
             <div className="hero__figure">
               <Image
-                src="/assets/img/carlos-hero-clean.png"
+                src="/assets/img/carlos-hero-clean.webp"
                 alt="Carlos Alberto Jiménez sosteniendo un modelo de cerebro"
                 width={1024}
                 height={1024}
@@ -126,7 +126,7 @@ export default function Home() {
             </article>
 
             <article className="course-card">
-              <Image className="course-card__image" src="/assets/img/neurocalma-card.png" alt="Neurocalma 444" width={600} height={400} />
+              <Image className="course-card__image" src="/assets/img/neurocalma-card.webp" alt="Neurocalma 444" width={600} height={400} />
               <div className="course-card__content">
                 <h3>Neurocalma 444</h3>
                 <p>Guía práctica para disminuir el estrés y la ansiedad cotidiana.</p>
@@ -135,7 +135,7 @@ export default function Home() {
             </article>
 
             <article className="course-card">
-              <Image className="course-card__image" src="/assets/img/cerebro-digital-fondo.png" alt="Cerebros digitales e inteligencia artificial" width={600} height={400} />
+              <Image className="course-card__image" src="/assets/img/cerebro-digital-fondo.webp" alt="Cerebros digitales e inteligencia artificial" width={600} height={400} />
               <div className="course-card__content">
                 <h3>CEREBROS DIGITALES e inteligencia artificial</h3>
                 <p>Libro, videos, conversaciones y recursos para comprender el aprendizaje en la era de la inteligencia artificial.</p>

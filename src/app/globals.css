@@ -605,7 +605,7 @@ h3 {
 
 .section--blue, .inner-hero, .shop-hero, .blog-hero, .article-hero {
   position: relative;
-  background-image: url('/assets/img/neuronas-fondo.png');
+  background-image: url('/assets/img/neuronas-fondo.webp');
   background-size: cover;
   background-position: center;
 }

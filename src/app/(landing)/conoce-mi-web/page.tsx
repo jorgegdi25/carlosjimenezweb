@@ -132,7 +132,7 @@ export default function ConoceMiWebPage() {
 
               <div className={styles.heroFigure}>
                 <Image
-                  src="/assets/img/carlos-hero-clean.png"
+                  src="/assets/img/carlos-hero-clean.webp"
                   alt="Carlos Alberto Jiménez sosteniendo un modelo de cerebro"
                   width={1024}
                   height={1024}

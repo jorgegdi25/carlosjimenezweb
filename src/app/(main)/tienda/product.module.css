@@ -2,7 +2,7 @@
   background-color: var(--navy, #263770);
   background-image:
     linear-gradient(110deg, rgba(4, 16, 51, 0.9), rgba(18, 46, 102, 0.72)),
-    url('/assets/img/neuronas-fondo.png');
+    url('/assets/img/neuronas-fondo.webp');
   background-size: cover;
   background-position: center;
   color: #ffffff;

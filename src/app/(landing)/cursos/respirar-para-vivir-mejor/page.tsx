@@ -158,25 +158,25 @@ export default function RespirarParaVivirMejor() {
             <div className={styles.benefits__grid}>
               <div className={styles['benefit-card']}>
                 <span className={styles['benefit-card__icon']}>
-                  <Image className={styles['benefit-badge']} src="/images/landing-respirar/benefit-reduce-blue.png" alt="Reducir el estrés" width={112} height={112} />
+                  <Image className={styles['benefit-badge']} src="/images/landing-respirar/benefit-reduce-blue.webp" alt="Reducir el estrés" width={112} height={112} />
                 </span>
                 <h3>Reducir el estrés de forma natural</h3>
               </div>
               <div className={styles['benefit-card']}>
                 <span className={styles['benefit-card__icon']}>
-                  <Image className={styles['benefit-badge']} src="/images/landing-respirar/benefit-focus-blue.png" alt="Recuperar la calma" width={112} height={112} />
+                  <Image className={styles['benefit-badge']} src="/images/landing-respirar/benefit-focus-blue.webp" alt="Recuperar la calma" width={112} height={112} />
                 </span>
                 <h3>Mejorar tu concentración y descanso</h3>
               </div>
               <div className={styles['benefit-card']}>
                 <span className={styles['benefit-card__icon']}>
-                  <Image className={styles['benefit-badge']} src="/images/landing-respirar/benefit-calm-blue.png" alt="Mejorar la concentración" width={112} height={112} />
+                  <Image className={styles['benefit-badge']} src="/images/landing-respirar/benefit-calm-blue.webp" alt="Mejorar la concentración" width={112} height={112} />
                 </span>
                 <h3>Técnicas simples que puedes aplicar hoy</h3>
               </div>
               <div className={styles['benefit-card']}>
                 <span className={styles['benefit-card__icon']}>
-                  <Image className={styles['benefit-badge']} src="/images/landing-respirar/duerme.png" alt="Dormir mejor" width={112} height={112} />
+                  <Image className={styles['benefit-badge']} src="/images/landing-respirar/duerme.webp" alt="Dormir mejor" width={112} height={112} />
                 </span>
                 <h3>Resultados reales en tu bienestar</h3>
               </div>

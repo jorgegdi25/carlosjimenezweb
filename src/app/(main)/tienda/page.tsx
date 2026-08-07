@@ -46,7 +46,7 @@ export default function Tienda() {
           </article>
 
           <article className="shop-feature">
-            <Image src="/assets/img/neurocalma-card.png" alt="Curso Neurocalma 444" width={800} height={500} />
+            <Image src="/assets/img/neurocalma-card.webp" alt="Curso Neurocalma 444" width={800} height={500} />
             <div>
               <p className="product-tag">Curso digital</p>
               <h3>Neurocalma 444</h3>
@@ -59,7 +59,7 @@ export default function Tienda() {
           </article>
 
           <article className="shop-feature">
-            <Image src="/assets/img/cerebro-digital-fondo.png" alt="Biblioteca interactiva Cerebros digitales" width={800} height={500} />
+            <Image src="/assets/img/cerebro-digital-fondo.webp" alt="Biblioteca interactiva Cerebros digitales" width={800} height={500} />
             <div>
               <p className="product-tag">Biblioteca interactiva</p>
               <h3>Cerebros digitales</h3>
