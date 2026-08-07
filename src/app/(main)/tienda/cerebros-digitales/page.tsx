@@ -7,7 +7,7 @@ import BookTestimonialsSection from "../BookTestimonialsSection";
 import DigitalPurchaseGuide from "@/components/DigitalPurchaseGuide";
 
 export const metadata: Metadata = {
-  title: "Cerebros digitales | Carlos Alberto Jiménez",
+  title: "Cerebros Digitales | Libro interactivo de Carlos Alberto Jiménez",
   description: "Libro PDF Cerebros digitales de Carlos Alberto Jiménez.",
 };
 

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contacto | Carlos Alberto Jiménez",
+  title: "Hablemos | Contacto de Carlos Alberto Jiménez",
   description: "Contacto de Carlos Alberto Jiménez para asesorías, cursos, libros y conferencias.",
 };
 

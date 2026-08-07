@@ -7,7 +7,7 @@ import BookTestimonialsSection from "../BookTestimonialsSection";
 import DigitalPurchaseGuide from "@/components/DigitalPurchaseGuide";
 
 export const metadata: Metadata = {
-  title: "El neuromarketing y el consumidor | Carlos Alberto Jiménez",
+  title: "Neuromarketing | Libro El neuromarketing y el consumidor",
   description: "Libro PDF El neuromarketing y el consumidor de Carlos Alberto Jiménez.",
 };
 

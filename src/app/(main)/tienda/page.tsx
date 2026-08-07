@@ -3,7 +3,7 @@ import Image from 'next/image';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Tienda | Carlos Alberto Jiménez",
+  title: "Cursos y libros | Tienda de Carlos Alberto Jiménez",
   description: "Tienda estática de cursos y libros de Carlos Alberto Jiménez, preparada para enlaces de pago Wompi.",
 };
 
