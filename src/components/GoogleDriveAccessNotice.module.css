@@ -43,6 +43,21 @@
   line-height: 1.5;
 }
 
+.notice .help {
+  margin-top: 0.45rem;
+}
+
+.notice a {
+  color: #173577;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.notice a:hover {
+  color: #0d2455;
+}
+
 @media (max-width: 640px) {
   .notice {
     gap: 0.7rem;

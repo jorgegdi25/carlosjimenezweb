@@ -15,6 +15,18 @@ export default function GoogleDriveAccessNotice() {
           cuenta de Google. Puede ser Gmail, Yahoo, Outlook u otro, siempre que
           esté asociado a Google. Para entrar, usa exactamente ese mismo correo.
         </p>
+        <p className={styles.help}>
+          Si tienes algún inconveniente con el acceso, escríbele por WhatsApp al
+          autor al{" "}
+          <a
+            href="https://wa.me/573104534160?text=Hola%2C%20realic%C3%A9%20una%20compra%20y%20necesito%20ayuda%20con%20el%20acceso%20al%20contenido."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            +57 310 453 4160
+          </a>
+          .
+        </p>
       </div>
     </aside>
   );
