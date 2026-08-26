@@ -17,7 +17,7 @@ const content = {
     ],
     noticeTitle: "Este es un producto 100 % digital",
     noticeText:
-      "No recibirás material físico. Escribe correctamente tu correo y utiliza una cuenta de Google para abrir el contenido compartido.",
+      "No recibirás material físico. En Wompi escribe el correo de tu cuenta de Google. Puede ser Gmail, Yahoo, Outlook u otro, siempre que esté asociado a Google. Para entrar, usa exactamente ese mismo correo.",
     faqs: [
       ["¿Cómo puedo pagar?", "Wompi mostrará las opciones disponibles para tu compra, como tarjeta débito o crédito, transferencia, Nequi, PSE, Daviplata, billeteras digitales o QR."],
       ["¿Dónde puedo ver el curso?", "El contenido está alojado en Google Drive y puedes consultarlo desde celular, tableta o computador iniciando sesión con una cuenta de Google."],

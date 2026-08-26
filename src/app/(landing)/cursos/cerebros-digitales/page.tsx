@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import DigitalPurchaseGuide from "@/components/DigitalPurchaseGuide";
+import GoogleDriveAccessNotice from "@/components/GoogleDriveAccessNotice";
 import VisitorCounter from "@/components/VisitorCounter";
 import {
   BadgeCheck,
@@ -139,6 +140,8 @@ export default function CerebrosDigitalesLanding() {
                 </span>
               </a>
             </div>
+
+            <GoogleDriveAccessNotice />
           </div>
         </section>
 

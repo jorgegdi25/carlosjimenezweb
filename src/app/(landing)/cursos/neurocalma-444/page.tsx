@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import DigitalPurchaseGuide from "@/components/DigitalPurchaseGuide";
+import GoogleDriveAccessNotice from "@/components/GoogleDriveAccessNotice";
 import VisitorCounter from "@/components/VisitorCounter";
 import styles from "./page.module.css";
 
@@ -127,6 +128,8 @@ export default function Neurocalma444() {
                 </span>
               </a>
             </div>
+
+            <GoogleDriveAccessNotice />
           </div>
         </section>
 
