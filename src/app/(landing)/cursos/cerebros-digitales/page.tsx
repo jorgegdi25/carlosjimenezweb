@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import DigitalPurchaseGuide from "@/components/DigitalPurchaseGuide";
-import GoogleDriveAccessNotice from "@/components/GoogleDriveAccessNotice";
 import VisitorCounter from "@/components/VisitorCounter";
 import {
   BadgeCheck,
@@ -125,6 +124,10 @@ export default function CerebrosDigitalesLanding() {
                 </span>
               </Link>
 
+              <p className={styles['access-hint']}>
+                Para recibir tu acceso, recomendamos usar una dirección de Gmail.
+              </p>
+
               <a
                 className={`${styles.button} ${styles['button--whatsapp']} ${styles['whatsapp-link']}`}
                 href="https://wa.me/573104534160?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20la%20Biblioteca%20Interactiva%20Cerebros%20Digitales."
@@ -141,7 +144,6 @@ export default function CerebrosDigitalesLanding() {
               </a>
             </div>
 
-            <GoogleDriveAccessNotice />
           </div>
         </section>
 
@@ -177,7 +179,7 @@ export default function CerebrosDigitalesLanding() {
           </div>
         </section>
 
-        <DigitalPurchaseGuide kind="drive-course" />
+        <DigitalPurchaseGuide kind="drive-course" showGoogleEmailGuidance />
 
         <section className={styles.author} aria-label="Autor del curso">
           <div className={`${styles['section-shell']} ${styles.author__card}`}>
