@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import DigitalPurchaseGuide from "@/components/DigitalPurchaseGuide";
-import GoogleDriveAccessNotice from "@/components/GoogleDriveAccessNotice";
 import VisitorCounter from "@/components/VisitorCounter";
 import styles from "./page.module.css";
 
@@ -113,6 +112,10 @@ export default function Neurocalma444() {
                 </span>
               </Link>
 
+              <p className={styles['access-hint']}>
+                Para recibir tu acceso, recomendamos usar una dirección de Gmail.
+              </p>
+
               <a
                 className={`${styles.button} ${styles['button--whatsapp']} ${styles['whatsapp-link']}`}
                 href="https://wa.me/573104534160?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20curso%20Neurocalma%20444."
@@ -129,7 +132,6 @@ export default function Neurocalma444() {
               </a>
             </div>
 
-            <GoogleDriveAccessNotice />
           </div>
         </section>
 
@@ -157,7 +159,7 @@ export default function Neurocalma444() {
           </div>
         </section>
 
-        <DigitalPurchaseGuide kind="drive-course" />
+        <DigitalPurchaseGuide kind="drive-course" showGoogleEmailGuidance />
 
         <section className={styles.author} aria-label="Autor del curso">
           <div className={`${styles['section-shell']} ${styles.author__card}`}>

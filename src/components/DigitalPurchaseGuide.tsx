@@ -4,7 +4,13 @@ type GuideKind = "drive-course" | "hotmart-course" | "pdf-book";
 
 interface DigitalPurchaseGuideProps {
   kind: GuideKind;
+  showGoogleEmailGuidance?: boolean;
 }
+
+const googleEmailFaq = [
+  "¿Qué correo debo registrar para recibir el acceso?",
+  "Recomendamos usar una dirección de Gmail. También puedes usar Yahoo, Outlook u otro correo, siempre que esté asociado a una cuenta de Google. Para entrar al curso, usa exactamente el mismo correo que registraste durante el pago.",
+];
 
 const content = {
   "drive-course": {
@@ -73,8 +79,17 @@ const content = {
   faqs: string[][];
 }>;
 
-export default function DigitalPurchaseGuide({ kind }: DigitalPurchaseGuideProps) {
+export default function DigitalPurchaseGuide({
+  kind,
+  showGoogleEmailGuidance = false,
+}: DigitalPurchaseGuideProps) {
   const guide = content[kind];
+  const faqs = showGoogleEmailGuidance
+    ? [googleEmailFaq, ...guide.faqs]
+    : guide.faqs;
+  const noticeText = showGoogleEmailGuidance
+    ? "No recibirás material físico. Cuando el pago sea aprobado, el acceso personal llegará al correo que registraste en Wompi."
+    : guide.noticeText;
 
   return (
     <section className={styles.section} aria-labelledby={`purchase-guide-${kind}`}>
@@ -99,13 +114,13 @@ export default function DigitalPurchaseGuide({ kind }: DigitalPurchaseGuideProps
           <span className={styles.noticeIcon} aria-hidden="true">i</span>
           <div>
             <strong>{guide.noticeTitle}</strong>
-            <p>{guide.noticeText}</p>
+            <p>{noticeText}</p>
           </div>
         </aside>
 
         <h2 className={styles.faqTitle}>Preguntas frecuentes</h2>
         <div className={styles.faq}>
-          {guide.faqs.map(([question, answer]) => (
+          {faqs.map(([question, answer]) => (
             <details key={question}>
               <summary>{question}</summary>
               <div className={styles.answer}><p>{answer}</p></div>
