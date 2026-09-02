@@ -3,7 +3,6 @@ import Link from "next/link";
 import {
   ArrowRight,
   Brain,
-  Check,
   ChevronDown,
   Clock3,
   HeartPulse,
@@ -25,23 +24,19 @@ const whatsappUrl =
 const learningItems = [
   {
     icon: Wind,
-    title: "Respiración consciente",
-    text: "Practica ritmos de respiración y ejercicios de atención para crear momentos de calma.",
-  },
-  {
-    icon: Sparkles,
-    title: "Tapping y observación emocional",
-    text: "Conoce secuencias guiadas para reconocer lo que sientes y acompañar tu autorregulación.",
+    title: "Respiración y meditación",
   },
   {
     icon: HeartPulse,
-    title: "Estimulación corporal",
-    text: "Aprende ejercicios suaves de masaje, vibración y atención corporal para favorecer la relajación.",
+    title: "Instrumentos para la relajación",
+  },
+  {
+    icon: Sparkles,
+    title: "Tapping cerebral",
   },
   {
     icon: Brain,
-    title: "Sistema nervioso y nervio vago",
-    text: "Comprende de forma sencilla cómo responde tu cuerpo al estrés y qué prácticas propone la guía.",
+    title: "Estimulación del nervio vago",
   },
 ];
 
@@ -58,82 +53,50 @@ export default function Neurocalma444() {
     <div className={styles.pageContainer}>
       <header className={styles.topbar}>
         <div className={styles.shell}>
-          <Link href="#inicio" className={styles.logoLink} aria-label="Volver al inicio de Neurocalma 444">
-            <Image
-              src="/images/landing-neurocalma/logo-nuerocalma.svg"
-              alt="Neurocalma"
-              width={182}
-              height={42}
-              priority
-            />
-          </Link>
           <nav className={styles.nav} aria-label="Contenido de la guía">
             <a href="#aprendizajes">Qué aprenderás</a>
             <a href="#contenido">Contenido</a>
             <a href="#preguntas">Preguntas</a>
           </nav>
-          <a className={styles.headerButton} href={checkoutUrl}>
-            <span>Acceder a la guía</span>
-            <strong>$30.000</strong>
-          </a>
         </div>
       </header>
 
       <main>
         <section className={styles.hero} id="inicio">
-          <div className={`${styles.shell} ${styles.heroGrid}`}>
-            <div className={styles.heroCopy}>
-              <p className={styles.eyebrow}>Neurocalma 444 · Guía práctica en video</p>
-              <h1>¿Sientes que el estrés domina tu vida?</h1>
-              <p className={styles.heroLead}>
-                Aprende prácticas guiadas para calmar tus pensamientos, manejar mejor el estrés y
-                recuperar momentos de tranquilidad.
-              </p>
-
-              <ul className={styles.heroChecks} aria-label="Características de la guía">
-                <li>
-                  <Check aria-hidden="true" /> Explicaciones sencillas y ejercicios prácticos
-                </li>
-                <li>
-                  <Check aria-hidden="true" /> Avanza a tu ritmo, desde donde quieras
-                </li>
-              </ul>
-
-              <div className={styles.heroActions}>
-                <a className={styles.primaryButton} href={checkoutUrl}>
-                  Acceder a la guía por $30.000 COP
-                  <ArrowRight aria-hidden="true" />
-                </a>
-                <a className={styles.textLink} href="#aprendizajes">
-                  Ver qué aprenderás
-                </a>
-              </div>
-
-              <p className={styles.paymentNote}>
-                <ShieldCheck aria-hidden="true" /> Pago seguro con Wompi · Acceso digital
-                inmediato
-              </p>
-            </div>
-
-            <div className={styles.heroVisual}>
+          <div className={`${styles.shell} ${styles.heroCentered}`}>
+            <Link href="#inicio" className={styles.heroLogo} aria-label="Volver al inicio de Neurocalma 444">
               <Image
-                src="/images/landing-neurocalma/image-neur.webp"
-                alt="Mujer practicando una respiración consciente al aire libre"
-                fill
+                src="/images/landing-neurocalma/logo-nuerocalma.svg"
+                alt="Neurocalma"
+                width={210}
+                height={96}
                 priority
-                sizes="(max-width: 900px) 100vw, 48vw"
               />
-              <div className={styles.heroVisualShade} />
-              <div className={styles.heroQuote}>
-                <span>Una pausa para volver a ti</span>
-                <strong>Respira. Comprende. Practica.</strong>
-              </div>
-              <div className={styles.priceCard}>
-                <span>Inversión única</span>
-                <strong>$30.000</strong>
-                <small>COP</small>
-              </div>
+            </Link>
+            <p className={styles.eyebrow}>Guía práctica en video</p>
+            <h1>
+              <span>Neurocalma</span>
+              <strong>444</strong>
+            </h1>
+            <p className={styles.heroQuestion}>¿Sientes que el estrés domina tu vida?</p>
+            <p className={styles.heroLead}>
+              Aprende prácticas guiadas para calmar tus pensamientos, manejar mejor el estrés y
+              recuperar momentos de tranquilidad.
+            </p>
+
+            <div className={styles.heroActions}>
+              <a className={styles.primaryButton} href={checkoutUrl}>
+                Acceder a la guía por $30.000 COP
+                <ArrowRight aria-hidden="true" />
+              </a>
+              <a className={styles.textLink} href="#aprendizajes">
+                Ver qué aprenderás
+              </a>
             </div>
+
+            <p className={styles.paymentNote}>
+              <ShieldCheck aria-hidden="true" /> Pago seguro con Wompi · Acceso digital inmediato
+            </p>
           </div>
         </section>
 
@@ -154,22 +117,37 @@ export default function Neurocalma444() {
           </div>
         </section>
 
-        <section className={styles.forYou}>
-          <div className={`${styles.shell} ${styles.forYouGrid}`}>
-            <div>
-              <p className={styles.sectionEyebrow}>Una guía para la vida cotidiana</p>
-              <h2>Si tu mente se siente agotada, esta guía puede ser para ti</h2>
+        <section className={styles.videoSection} aria-label="Video de presentación de Neurocalma 444">
+          <div className={`${styles.shell} ${styles.videoWrap}`}>
+            <div className={styles.videoPanel}>
+              <div className={styles.videoFrame}>
+                <iframe
+                  title="Presentación de la guía Neurocalma 444"
+                  src="https://www.youtube.com/embed/BSAG2MqW6f8?rel=0"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              </div>
+              <div className={styles.videoCaption}>
+                <PlayCircle aria-hidden="true" />
+                <div>
+                  <strong>Conoce Neurocalma 444</strong>
+                  <span>
+                    Mira el video y descubre cómo esta guía lleva las prácticas a tu día a día.
+                  </span>
+                </div>
+              </div>
             </div>
-            <div className={styles.forYouText}>
-              <p>
-                Neurocalma 444 es una guía práctica para comprender cómo responde tu cuerpo ante
-                el estrés e incorporar ejercicios sencillos a tu rutina diaria.
-              </p>
-              <p>
-                No necesitas conocimientos previos: solo un espacio tranquilo, disposición para
-                aprender y unos minutos para practicar.
-              </p>
-            </div>
+            <a
+              className={styles.videoWhatsapp}
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MessageCircle aria-hidden="true" />
+              ¿Tienes dudas? Hablemos por WhatsApp
+            </a>
           </div>
         </section>
 
@@ -178,20 +156,15 @@ export default function Neurocalma444() {
             <div className={styles.sectionHeading}>
               <p className={styles.sectionEyebrow}>Contenido práctico y claro</p>
               <h2 id="learning-title">Con esta guía aprenderás</h2>
-              <p>
-                Herramientas explicadas por Carlos Alberto Jiménez para comprender el estrés y
-                construir una rutina personal de bienestar.
-              </p>
             </div>
 
             <div className={styles.learningGrid}>
-              {learningItems.map(({ icon: Icon, title, text }) => (
+              {learningItems.map(({ icon: Icon, title }) => (
                 <article className={styles.learningCard} key={title}>
                   <span className={styles.iconWrap}>
                     <Icon aria-hidden="true" />
                   </span>
                   <h3>{title}</h3>
-                  <p>{text}</p>
                 </article>
               ))}
             </div>
@@ -213,26 +186,6 @@ export default function Neurocalma444() {
               </ol>
             </div>
 
-            <div className={styles.videoPanel}>
-              <div className={styles.videoFrame}>
-                <iframe
-                  title="Presentación de la guía Neurocalma 444"
-                  src="https://www.youtube.com/embed/BSAG2MqW6f8?rel=0"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                />
-              </div>
-              <div className={styles.videoCaption}>
-                <PlayCircle aria-hidden="true" />
-                <div>
-                  <strong>Conoce Neurocalma 444</strong>
-                  <span>
-                    Mira el video y descubre cómo esta guía lleva las prácticas a tu día a día.
-                  </span>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -253,10 +206,10 @@ export default function Neurocalma444() {
                 Magíster en comunicación educativa, conferencista internacional y autor de 26
                 libros sobre neuroeducación, juego y neuromarketing.
               </p>
-              <div className={styles.authorNote}>
-                <strong>Enfoque de la guía</strong>
-                <span>Herramientas comprensibles que puedes practicar en tu vida cotidiana.</span>
-              </div>
+              <Link className={styles.authorWebsite} href="/">
+                Visitar página web
+                <ArrowRight aria-hidden="true" />
+              </Link>
             </div>
           </div>
         </section>

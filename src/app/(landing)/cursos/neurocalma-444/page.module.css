@@ -43,7 +43,7 @@
   min-height: 74px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 24px;
 }
 
@@ -62,7 +62,6 @@
   align-items: center;
   justify-content: center;
   gap: clamp(18px, 2.5vw, 34px);
-  margin-left: auto;
 }
 
 .nav a {
@@ -121,26 +120,55 @@
 
 .hero {
   position: relative;
+  isolation: isolate;
   scroll-margin-top: 74px;
+  min-height: calc(100svh - 74px);
+  display: grid;
+  place-items: center;
   overflow: hidden;
-  padding: clamp(48px, 7vw, 92px) 0 64px;
-  background:
-    radial-gradient(circle at 3% 8%, rgba(32, 212, 157, 0.16), transparent 31%),
-    linear-gradient(180deg, #f8fbf7 0%, #eff7f2 100%);
+  padding: clamp(48px, 7vw, 82px) 0;
+  color: var(--white);
+  background: var(--forest-deep);
 }
 
+.hero::before,
 .hero::after {
   content: "";
   position: absolute;
-  right: -160px;
-  bottom: -220px;
-  width: 520px;
-  height: 520px;
-  border: 1px solid rgba(7, 155, 112, 0.14);
-  border-radius: 50%;
-  box-shadow:
-    0 0 0 54px rgba(7, 155, 112, 0.035),
-    0 0 0 108px rgba(7, 155, 112, 0.025);
+  pointer-events: none;
+}
+
+.hero::before {
+  inset: -40px;
+  z-index: -2;
+  background: url("/images/landing-neurocalma/image-neur.webp") left center / cover;
+  opacity: 0.84;
+  transform: scale(1.02);
+}
+
+.hero::after {
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(90deg, rgba(1, 24, 19, 0.14) 0%, rgba(1, 24, 19, 0.72) 38%, rgba(1, 24, 19, 0.94) 100%),
+    linear-gradient(180deg, rgba(1, 27, 21, 0.34), rgba(1, 24, 19, 0.82));
+}
+
+.heroCentered {
+  position: relative;
+  z-index: 1;
+  max-width: 850px;
+  text-align: center;
+}
+
+.heroLogo {
+  display: inline-flex;
+  margin-bottom: 21px;
+}
+
+.heroLogo img {
+  width: clamp(150px, 19vw, 210px);
+  height: auto;
 }
 
 .heroGrid {
@@ -167,29 +195,69 @@
 }
 
 .hero h1 {
-  max-width: 670px;
   margin: 0;
-  color: var(--forest-deep);
+  color: var(--white);
   font-family: "Outfit", "Inter", sans-serif;
-  font-size: clamp(2.75rem, 5.15vw, 5.05rem);
+  font-size: clamp(2.15rem, 4vw, 3.65rem);
   font-weight: 800;
-  letter-spacing: -0.055em;
-  line-height: 0.98;
+  letter-spacing: -0.045em;
+  line-height: 0.92;
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+.hero h1 span,
+.hero h1 strong {
+  display: block;
+}
+
+.hero h1 strong {
+  margin-top: 9px;
+  color: var(--mint);
+  font-size: 0.76em;
+}
+
+.hero .eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: var(--mint);
+}
+
+.hero .eyebrow::before,
+.hero .eyebrow::after {
+  content: "";
+  width: 58px;
+  height: 2px;
+  background: currentColor;
+}
+
+.heroQuestion {
+  max-width: 850px;
+  margin: 32px auto 0;
+  color: var(--white);
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: clamp(2.2rem, 4.7vw, 4.25rem);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 1.04;
   text-wrap: balance;
 }
 
 .heroLead {
-  max-width: 610px;
-  margin: 25px 0 0;
-  color: #38574f;
-  font-size: clamp(1.1rem, 1.65vw, 1.35rem);
+  max-width: 670px;
+  margin: 17px auto 0;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: clamp(1.04rem, 1.55vw, 1.22rem);
   line-height: 1.55;
 }
 
 .heroChecks {
   display: grid;
+  justify-content: center;
   gap: 10px;
-  margin: 25px 0 0;
+  margin: 25px auto 0;
   padding: 0;
   list-style: none;
 }
@@ -198,7 +266,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: var(--ink);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 0.95rem;
   font-weight: 720;
 }
@@ -218,6 +286,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 16px 22px;
   margin-top: 32px;
 }
@@ -274,6 +343,11 @@
   font-weight: 800;
 }
 
+.hero .textLink {
+  color: var(--mint) !important;
+  border-color: rgba(32, 212, 157, 0.48);
+}
+
 .paymentNote {
   display: flex;
   align-items: center;
@@ -282,6 +356,11 @@
   color: var(--ink-soft);
   font-size: 0.82rem;
   line-height: 1.4;
+}
+
+.hero .paymentNote {
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.68);
 }
 
 .paymentNote svg {
@@ -430,6 +509,51 @@
   font-size: 1.02rem;
 }
 
+.videoSection {
+  padding: clamp(64px, 8vw, 100px) 0;
+  background: var(--white);
+}
+
+.videoWrap {
+  max-width: 920px;
+}
+
+.videoWhatsapp {
+  width: min(100%, 650px);
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  margin: 24px auto 0;
+  padding: 15px 24px;
+  color: var(--white) !important;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #0bae7c, #087e5d);
+  box-shadow: 0 15px 32px rgba(7, 155, 112, 0.2);
+  font-size: 0.98rem;
+  font-weight: 850;
+  text-align: center;
+  transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+}
+
+.videoWhatsapp:hover {
+  transform: translateY(-2px);
+  filter: saturate(1.08);
+  box-shadow: 0 18px 38px rgba(7, 155, 112, 0.28);
+}
+
+.videoWhatsapp:focus-visible {
+  outline: 3px solid rgba(32, 212, 157, 0.48);
+  outline-offset: 4px;
+}
+
+.videoWhatsapp svg {
+  flex: 0 0 auto;
+  width: 22px;
+  height: 22px;
+}
+
 .forYou {
   padding: clamp(74px, 9vw, 120px) 0;
   background: var(--white);
@@ -501,7 +625,7 @@
 }
 
 .learningCard {
-  min-height: 260px;
+  min-height: 180px;
   padding: 31px;
   border: 1px solid rgba(7, 155, 112, 0.14);
   border-radius: 18px;
@@ -557,7 +681,8 @@
 
 .programGrid {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(390px, 0.85fr);
+  grid-template-columns: minmax(0, 820px);
+  justify-content: center;
   gap: clamp(45px, 8vw, 95px);
   align-items: center;
 }
@@ -599,10 +724,10 @@
 
 .videoPanel {
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(7, 155, 112, 0.18);
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.06);
-  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.25);
+  background: var(--forest-deep);
+  box-shadow: 0 30px 70px rgba(3, 37, 29, 0.18);
 }
 
 .videoFrame {
@@ -698,32 +823,34 @@
   line-height: 1.7;
 }
 
-.authorNote {
-  max-width: 720px;
+.authorWebsite {
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
   margin: 24px 0 0;
-  padding: 18px 22px;
-  color: var(--forest);
-  border-left: 3px solid var(--mint);
-  background: #f2f8f4;
-  font-family: "Outfit", "Inter", sans-serif;
-  font-size: 1.08rem;
-  font-weight: 620;
-  line-height: 1.55;
+  padding: 13px 19px;
+  color: var(--white) !important;
+  border-radius: 11px;
+  background: var(--forest);
+  font-size: 0.9rem;
+  font-weight: 800;
+  transition: transform 180ms ease, background 180ms ease;
 }
 
-.authorNote strong,
-.authorNote span {
-  display: block;
+.authorWebsite:hover {
+  transform: translateY(-2px);
+  background: var(--green);
 }
 
-.authorNote strong {
-  margin-bottom: 4px;
-  color: var(--green);
-  font-family: "Inter", sans-serif;
-  font-size: 0.72rem;
-  font-weight: 850;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+.authorWebsite:focus-visible {
+  outline: 3px solid rgba(32, 212, 157, 0.48);
+  outline-offset: 4px;
+}
+
+.authorWebsite svg {
+  width: 18px;
+  height: 18px;
 }
 
 .faq {
@@ -1012,19 +1139,7 @@
     width: min(100% - 28px, 1160px);
   }
 
-  .topbar .shell {
-    min-height: 64px;
-  }
-
-  .nav {
-    display: none;
-  }
-
-  .headerButton {
-    margin-left: auto;
-  }
-
-  .headerButton strong {
+  .topbar {
     display: none;
   }
 
@@ -1032,8 +1147,23 @@
     padding: 43px 0 45px;
   }
 
+  .hero::before {
+    background-position: 26% center;
+    filter: blur(2px);
+    opacity: 0.55;
+    transform: scale(1.04);
+  }
+
+  .hero::after {
+    background: linear-gradient(180deg, rgba(1, 27, 21, 0.68), rgba(1, 24, 19, 0.9));
+  }
+
   .hero h1 {
-    font-size: clamp(2.45rem, 13vw, 3.55rem);
+    font-size: clamp(2rem, 10vw, 2.75rem);
+  }
+
+  .heroQuestion {
+    font-size: clamp(2.05rem, 10vw, 2.85rem);
   }
 
   .heroLead {
@@ -1099,6 +1229,7 @@
   }
 
   .forYou,
+  .videoSection,
   .learning,
   .program,
   .author,
@@ -1136,6 +1267,13 @@
     padding: 17px;
   }
 
+  .videoWhatsapp {
+    min-height: 58px;
+    margin-top: 18px;
+    padding-inline: 18px;
+    font-size: 0.92rem;
+  }
+
   .authorCard {
     grid-template-columns: 1fr;
     gap: 38px;
@@ -1156,8 +1294,8 @@
     text-align: center;
   }
 
-  .authorNote {
-    text-align: left;
+  .authorWebsite {
+    margin-inline: auto;
   }
 
   .faqList summary {
