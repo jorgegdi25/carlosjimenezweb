@@ -122,11 +122,10 @@
   position: relative;
   isolation: isolate;
   scroll-margin-top: 74px;
-  min-height: calc(100svh - 74px);
   display: grid;
   place-items: center;
   overflow: hidden;
-  padding: clamp(48px, 7vw, 82px) 0;
+  padding: clamp(34px, 4.5vw, 58px) 0;
   color: var(--white);
   background: var(--forest-deep);
 }
@@ -162,13 +161,22 @@
 }
 
 .heroLogo {
-  display: inline-flex;
-  margin-bottom: 21px;
+  position: relative;
+  width: clamp(165px, 19vw, 195px);
+  aspect-ratio: 1177 / 925;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto -5px;
 }
 
 .heroLogo img {
-  width: clamp(150px, 19vw, 210px);
-  height: auto;
+  position: absolute;
+  top: -18%;
+  left: 50%;
+  width: 174%;
+  max-width: none;
+  height: 148%;
+  transform: translateX(-50%);
 }
 
 .heroGrid {
@@ -198,7 +206,7 @@
   margin: 0;
   color: var(--white);
   font-family: "Outfit", "Inter", sans-serif;
-  font-size: clamp(2.15rem, 4vw, 3.65rem);
+  font-size: clamp(1.75rem, 3vw, 2.7rem);
   font-weight: 800;
   letter-spacing: -0.045em;
   line-height: 0.92;
@@ -212,30 +220,14 @@
 }
 
 .hero h1 strong {
-  margin-top: 9px;
+  margin-top: 5px;
   color: var(--mint);
-  font-size: 0.76em;
-}
-
-.hero .eyebrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  color: var(--mint);
-}
-
-.hero .eyebrow::before,
-.hero .eyebrow::after {
-  content: "";
-  width: 58px;
-  height: 2px;
-  background: currentColor;
+  font-size: 0.7em;
 }
 
 .heroQuestion {
   max-width: 850px;
-  margin: 32px auto 0;
+  margin: 22px auto 0;
   color: var(--white);
   font-family: "Outfit", "Inter", sans-serif;
   font-size: clamp(2.2rem, 4.7vw, 4.25rem);
@@ -288,7 +280,7 @@
   align-items: center;
   justify-content: center;
   gap: 16px 22px;
-  margin-top: 32px;
+  margin-top: 26px;
 }
 
 .primaryButton {
@@ -1144,7 +1136,7 @@
   }
 
   .hero {
-    padding: 43px 0 45px;
+    padding: 10px 0 24px;
   }
 
   .hero::before {
@@ -1159,15 +1151,26 @@
   }
 
   .hero h1 {
-    font-size: clamp(2rem, 10vw, 2.75rem);
+    font-size: clamp(1.65rem, 7.5vw, 2.1rem);
+  }
+
+  .heroLogo {
+    width: clamp(145px, 36vw, 165px);
+    margin-bottom: -6px;
   }
 
   .heroQuestion {
-    font-size: clamp(2.05rem, 10vw, 2.85rem);
+    margin-top: 14px;
+    font-size: clamp(2.15rem, 10.5vw, 3rem);
   }
 
   .heroLead {
+    margin-top: 12px;
     font-size: 1.04rem;
+  }
+
+  .heroActions {
+    margin-top: 22px;
   }
 
   .heroActions {

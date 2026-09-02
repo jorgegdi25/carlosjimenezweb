@@ -73,7 +73,6 @@ export default function Neurocalma444() {
                 priority
               />
             </Link>
-            <p className={styles.eyebrow}>Guía práctica en video</p>
             <h1>
               <span>Neurocalma</span>
               <strong>444</strong>
