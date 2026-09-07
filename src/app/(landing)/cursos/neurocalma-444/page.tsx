@@ -85,7 +85,7 @@ export default function Neurocalma444() {
 
             <div className={styles.heroActions}>
               <a className={styles.primaryButton} href={checkoutUrl}>
-                Acceder a la guía por $30.000 COP
+                Comprar Neurocalma 444 por $30.000 COP
                 <ArrowRight aria-hidden="true" />
               </a>
               <a className={styles.textLink} href="#aprendizajes">
@@ -236,7 +236,7 @@ export default function Neurocalma444() {
                       <span>1</span>
                       <p>
                         <strong>Realiza el pago</strong>
-                        Pulsa “Acceder a la guía” y paga de forma segura con las opciones
+                        Pulsa “Comprar Neurocalma 444” y paga de forma segura con las opciones
                         disponibles en Wompi.
                       </p>
                     </div>
@@ -308,7 +308,7 @@ export default function Neurocalma444() {
               <span>Guía completa en video</span>
               <strong>$30.000 COP</strong>
               <a className={styles.primaryButton} href={checkoutUrl}>
-                Quiero acceder a Neurocalma 444
+                Quiero comprar Neurocalma 444
                 <ArrowRight aria-hidden="true" />
               </a>
               <small>
@@ -336,7 +336,7 @@ export default function Neurocalma444() {
           <small>Acceso inmediato</small>
           <strong>$30.000 COP</strong>
         </div>
-        <a href={checkoutUrl}>Acceder a la guía</a>
+        <a href={checkoutUrl}>Comprar ahora</a>
       </div>
     </div>
   );
