@@ -355,6 +355,16 @@
   color: rgba(255, 255, 255, 0.68);
 }
 
+.paymentNote span,
+.paymentNote strong {
+  display: block;
+}
+
+.paymentNote strong {
+  margin-bottom: 2px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
 .paymentNote svg {
   width: 17px;
   height: 17px;

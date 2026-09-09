@@ -94,7 +94,12 @@ export default function Neurocalma444() {
             </div>
 
             <p className={styles.paymentNote}>
-              <ShieldCheck aria-hidden="true" /> Pago seguro con Wompi · Acceso digital inmediato
+              <ShieldCheck aria-hidden="true" />
+              <span>
+                <strong>Pago seguro con Wompi</strong>
+                Paga con tarjeta débito o crédito, PSE, Nequi, Daviplata u otros medios
+                disponibles.
+              </span>
             </p>
           </div>
         </section>
