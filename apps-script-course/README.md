@@ -10,7 +10,7 @@ El proyecto rapido tambien reconoce estos productos:
 | --- | --- | --- | --- |
 | `CAJ-CURSO-TEST-` | Curso de prueba | `1T1l6-11l7LR0X9MntAS82OfwQCdh5xL_` | $20.000 COP |
 | `CAJ-NEUROCALMA-444-` | Neurocalma 444 | `1haJPsNSXJ0WVFm9saZodkWe6mycG173u` | $30.000 COP |
-| `CAJ-CEREBROS-INTERACTIVO-` | Biblioteca interactiva Cerebros digitales | `1zvGKwEMDJhY_u-mvnMd7PYl6FlKbbELs` | $50.000 COP |
+| `CAJ-CEREBROS-INTERACTIVO-` | Biblioteca interactiva Cerebros digitales | `1zvGKwEMDJhY_u-mvnMd7PYl6FlKbbELs` | $30.000 COP |
 
 ## Primera prueba, sin pago
 
@@ -53,7 +53,7 @@ Despues de aprobar la prueba manual:
 La URL se configurara en Vercel como `COURSE_APPS_SCRIPT_URL`. Wompi seguira llamando al webhook existente de Vercel; no se debe reemplazar la URL de eventos actual.
 
 Para probar Cerebros Digitales, la referencia que debe generar la web comienza por
-`CAJ-CEREBROS-INTERACTIVO-` y el valor debe ser `5000000` centavos de COP.
+`CAJ-CEREBROS-INTERACTIVO-` y el valor debe ser `3000000` centavos de COP.
 
 ## Seguridad
 

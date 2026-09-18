@@ -15,7 +15,7 @@ var COURSE_PRODUCTS = [
     referencePrefix: "CAJ-CEREBROS-INTERACTIVO-",
     name: "Biblioteca interactiva Cerebros digitales",
     folderId: "1zvGKwEMDJhY_u-mvnMd7PYl6FlKbbELs",
-    priceInCents: 5000000
+    priceInCents: 3000000
   }
 ];
 

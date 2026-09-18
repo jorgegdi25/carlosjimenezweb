@@ -10,11 +10,22 @@ import {
   BookOpenText,
   BrainCircuit,
   Clock3,
+  Gamepad2,
   Headphones,
   LockKeyhole,
+  Palette,
+  ScanSearch,
   Video,
 } from "lucide-react";
 import styles from "./page.module.css";
+
+const courseModules = [
+  { number: "01", title: "El cerebro digital", icon: BrainCircuit },
+  { number: "02", title: "Revolución digital y consumo", icon: ScanSearch },
+  { number: "03", title: "Lúdica y juego digital", icon: Gamepad2 },
+  { number: "04", title: "Educación digital y artística", icon: Palette },
+  { number: "05", title: "Diagnósticos cerebrales", icon: BrainCircuit },
+];
 
 export default function CerebrosDigitalesLanding() {
   const heroRef = useRef<HTMLElement>(null);
@@ -100,14 +111,17 @@ export default function CerebrosDigitalesLanding() {
               aria-label="Video principal del curso"
               ref={videoCardRef}
             >
-              <iframe
+              <video
                 id="course-video"
                 title="Video Cerebros Digitales"
-                src="https://www.youtube.com/embed/bYX50jlhGng?rel=0"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
+                controls
+                playsInline
+                preload="metadata"
+                poster="/assets/img/cerebro-digital-fondo.webp"
+              >
+                <source src="/videos/cerebros-digitales.mp4" type="video/mp4" />
+                Tu navegador no puede reproducir este video.
+              </video>
             </div>
 
             <div className={`${styles['cta-group']} ${styles['reveal-hero']}`} aria-label="Comprar o consultar por WhatsApp">
@@ -119,7 +133,7 @@ export default function CerebrosDigitalesLanding() {
                   <Image src="/images/landing-neurocalma/kLnsBmT16B.svg" alt="" width={24} height={24} />
                 </span>
                 <span>
-                  <strong>Comprar ahora - $40.000 COP</strong>
+                  <strong>Comprar ahora - $30.000 COP</strong>
                   <small>Pago seguro con Wompi y acceso inmediato</small>
                 </span>
               </Link>
@@ -179,6 +193,31 @@ export default function CerebrosDigitalesLanding() {
           </div>
         </section>
 
+        <section className={styles.courseContent} id="contenido-texto" aria-labelledby="content-title">
+          <div className={styles['section-shell']}>
+            <div className={styles.contentHeading}>
+              <h2 id="content-title">¿Qué vas a encontrar dentro?</h2>
+            </div>
+
+            <div className={styles.moduleGrid}>
+              {courseModules.map((module) => {
+                const Icon = module.icon;
+                return (
+                  <article className={styles.moduleCard} key={module.number}>
+                    <div className={styles.moduleHeader}>
+                      <span>{module.number}</span>
+                      <span className={styles.moduleIcon} aria-hidden="true">
+                        <Icon />
+                      </span>
+                    </div>
+                    <h3>{module.title}</h3>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
         <DigitalPurchaseGuide kind="drive-course" showGoogleEmailGuidance />
 
         <section className={styles.author} aria-label="Autor del curso">
@@ -213,7 +252,7 @@ export default function CerebrosDigitalesLanding() {
                 <Image src="/images/landing-neurocalma/kLnsBmT16B.svg" alt="" width={24} height={24} />
               </span>
               <span>
-                <strong>Comprar ahora - $40.000 COP</strong>
+                <strong>Comprar ahora - $30.000 COP</strong>
                 <small>Acceso inmediato al curso online</small>
               </span>
             </Link>
@@ -262,7 +301,7 @@ export default function CerebrosDigitalesLanding() {
           <div className={styles['sticky-cta__content']}>
             <div className={styles['sticky-cta__price']}>
               <span>Biblioteca interactiva Cerebros Digitales</span>
-              <strong>$40.000 COP</strong>
+              <strong>$30.000 COP</strong>
             </div>
             <Link
               className={`${styles.button} ${styles['button--buy']} ${styles['button--small']}`}
